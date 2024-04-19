@@ -1,0 +1,8 @@
+Next steps:
+- [ ] Who are the stakeholders
+- [ ] What organisations are involved, and can we use their resources.
+- [ ] Create a draft report from data of all years, essentially exploring the data.
+- [ ] Get projects established enough so that others can take it up later. 
+- [ ] Persuade LLRB members to get involved and use their connections and to motivate the buy in of outcomes.
+- [ ] Investigate the possibility of collaboration with other organisations.
+- [ ] What are the main channels for content distribution? (Instagram?).
