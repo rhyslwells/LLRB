@@ -2,11 +2,51 @@
 
 ## Data exploration
 
+## shout tags
+
+For each shout_detail item we provide shout_details_tags as a way to quickly understand the incident. Here are the tags and details they correspond to:
+
+Tag categories:
+- Mechanical
+- Rescue
+- Medical
+- Environmental
+- Mishap
+- Assistance
+- FalseAlarm
+- Miscellaneous
+- Search
+- Transport
+
+Reading through the shout-details we see that LLRB also work with the following organisations:
+- SAS
+- LLTNP
+- DMMS
+We will enquire about cross organisational training and data sharing.
+
+
+
+## pager-codes
+
+Question: What are the additionaly pager codes e.g. for 9992167 what does 2167 mean?
+
+pager_code
+222                                                                                                                     [ 4380]
+333                    [ 2265, 369,  2428,  3077,  2673, 1753, 2585,  1846, 2563,  3072,  1151,  1456,  3439, 4906, 3630, 1717]
+999    [2167,  0210,  1682, 1701, 4432,  1324, 2804,  1977,  3665,  2784,  1448,  1919,  1087,  1573,  2788,  2465, 2336, 3743]
+
+Only two training shouts have been recorded. It would be good to have more training data to understand the training process. Particularly what is invovled and how often it is done and who needs training in certain areas.
+
+## Naming conventions
+
+We recommend that the crew on board and on shore are recorded as initials, and as a comma separated list. If there are no crew on board or on shore, record as "None". This will make it easier to search for crew members and understand who was on board for each shout.
+
+
 ## Suggestions for data collection
 
 To make it easier for crew we can have them input the What3Words for the incident location, or if they prefer the coordinates. To accomondate for this we have set up a tool that uses the What3Words API to convert the What3Words to coordinates. 
 
-Should record time_of_shout_completion to counter time_of_shout
+Should record time_of_shout_completion to counter time_of_shout, as may be different from time_boat_returned.
 
 Try to specific a time for feats=['time_of_shout','time_boat_launched','time_boat_returned]
 

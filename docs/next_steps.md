@@ -5,6 +5,7 @@
 
 Later:
 - [ ] Contact those on the social media side and what could benifit them.
+- [ ] Make make interactable with java - see possibly geojson,  Leaflet.js. Generalise to realtime with Kafka? 
 
 
 Done:
