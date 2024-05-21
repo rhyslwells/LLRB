@@ -1,0 +1,52 @@
+"dates: (dd/mm/yyyy)
+Use time format HH:MM e.g. 15:45
+pager_code: (222,333,999,training)
+pager_subcode: 9992167 subcode is 2167
+lat_long e.g. copied from google map e.g. 56.123669414214476, -4.649563665146632
+shout_details: description of incident
+Based on shout_details fill in shout_detail_tags using:
+  - Mechanical, Rescue, Medical
+  - Environmental, Mishap,Assistance
+  - FalseAlarm, Miscellaneous,Search,Transport
+e.g. Mechanical,Medical,Search
+Record crew as comma list of initials e.g. RB,ABJ,ABS 
+swell_level (1,2,3)
+temperature (in Celcius)
+light_level (dark/dusk/daylight)
+visability (clear/foggy/misty)
+
+Remember to:
+Spell locations and initials of people correctly.
+Try not leave any entries blank, if blank fill with None",,,,,"| Initials | Name                     |
+|----------|--------------------------|
+| RB       | Ronnie Britton           
+| RO       | Rennie Oliver            
+| IG       | Iain Gollan (Goz)        
+| AM       | Ally McLeod              
+| ABS      | Andy Biddulph Snr        
+| ABJ      | Andy Biddulph Jnr        
+| GD       | Gemma Dorran            
+| PBT      | Phils Brooks-Taylor      
+| DON     | David O'Neil             
+| CC       | Craig Clancy             
+| GH       | Gerry Heaney             
+| AJM     | Angus John MacDonald     
+| CMS     | Callum MacKenzie Stevens 
+| DS       | David Stuart             
+| TR       | Thomas Rogers            ",,"| EM       | Euan MciIwraith          
+| PD       | Paul Dorrian             
+| KM       | Kevin McPartland    
+| JB       | Jenna Biddulph         
+| VM       | Vicki Murphy          
+| JM       | John Mason             
+| AC       | Andy Connell          
+| FN       | Franny Nicol            
+| FR       | Frank Rogers           
+| CA       | Christine Allan        
+| CS       | Clinton Salter           
+| JT       | James Thomson            
+| TAM      | Tam (Cox)                
+| GERARD   | Gerard                   
+| DAVY     | Davy                     
+| LEE      | Lee                      ",,,,,,,,,,
+date_of_shout,time_of_shout,time_boat_launched,time_boat_returned,time_shout_completed,pager_code,pager_subcode,location_of_shout,lat_long,shout_details,shout_details_tags,crew_on_board,crew_on_shore,weather_at_time_of_shout,swell,temperature,light_level,visability
