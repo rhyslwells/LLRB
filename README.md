@@ -1,20 +1,21 @@
 ## Project Overview
 
-The [Loch Lomond Rescue Boat](https://www.lochlomondrescueboat.org/) (LLRB) is a charitable service protecting the waters of Loch Lomond. The principal function of operations is to ensure that a rescue service is provided for the public good and to encourage, promote and teach all aspects of safety in and around the waters of Loch Lomond including the safety of those persons using boats, canoes, wind-surfers, jet skis and other vessels on the Loch.
+The [Loch Lomond Rescue Boat](https://www.lochlomondrescueboat.org/) (LLRB) is a charitable service protecting the waters of Loch Lomond. The principal function of operations is to ensure that a rescue service is provided for the public good and to encourage, promote and teach all aspects of safety in and around the waters of Loch Lomond.
 
-To optimize their operations and enhance public safety, we focus on three key ares: preparedness, prediction, and public awareness.
+To optimize their operations and enhance public safety, we provide analysis of three key areas: preparedness, prediction, and public awareness.
 
 ## Preparedness
 
 **Goals**:
-- Communicate with LLRB to discover requirements , and motivate data recording techniques to allow for future analysis.
-- Provide regular insightful reporting. One method could be to analyse incidents by dates/seasons and forecast future possible incidents and suggest strategies/training for handling those.
-- Use insights to inform training, preparedness efforts, and facilitate collaborative initiatives with other agencies.
+- Communicate with LLRB to discover requirements and motivate data recording techniques to allow for future analysis.
+- Provide regular insightful reporting. For example this could include analyse incidents by dates.
+- Use insights to inform training and facilitate collaborative initiatives with other agencies.
 
 ## Prediction
 
 **Goals:**
 - Provide an interactable/filterable map that marks historical areas of given incidents.
+- Forecast possible incidents and suggest strategies for handling.
 - Provide a prediction tool for targets such as location and length of callout time.
 
 ## Public Awareness

@@ -1,0 +1,2968 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ecfd3033793bd80065d0ddabacb016ab {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ecfd3033793bd80065d0ddabacb016ab" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ecfd3033793bd80065d0ddabacb016ab = L.map(
+                "map_ecfd3033793bd80065d0ddabacb016ab",
+                {
+                    center: [56.106270604359246, -4.621716612406695],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10.45,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_ecfd3033793bd80065d0ddabacb016ab);
+
+            
+
+        
+    
+            var tile_layer_1217c544f06af111a79ecba08dcf6608 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_1217c544f06af111a79ecba08dcf6608.addTo(map_ecfd3033793bd80065d0ddabacb016ab);
+        
+    
+            var marker_271b26e1ecafbe9a773413d86b7a350b = L.marker(
+                [56.10063229251386, -4.635696317637836],
+                {}
+            ).addTo(map_ecfd3033793bd80065d0ddabacb016ab);
+        
+    
+            var icon_a97cc471bc28b9e1788a6cb5a83c798b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_271b26e1ecafbe9a773413d86b7a350b.setIcon(icon_a97cc471bc28b9e1788a6cb5a83c798b);
+        
+    
+            marker_271b26e1ecafbe9a773413d86b7a350b.bindTooltip(
+                `<div>
+                     LLRB position
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_435d4519ad070e271e539338900ed399 = L.marker(
+                [56.29304250371002, -4.695885531178942],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_c6909aa533f69ad4fdb7808306441ace = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_435d4519ad070e271e539338900ed399.setIcon(icon_c6909aa533f69ad4fdb7808306441ace);
+        
+    
+        var popup_fae852e3942be7c2747349bedd030cad = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6e550cfe9c95862a85b47ec956f483a7 = $(`<div id="html_6e550cfe9c95862a85b47ec956f483a7" style="width: 100.0%; height: 100.0%;">Shout details:   19yr old male casuAM walking the WHW twisted his left knee , slightly injured , casuAM did not want any medical treatment ,  advised him to seek medical treatment when he can if injury gets worse, taken to Ardlui to waiting police officers they will take him to train station.</div>`)[0];
+                popup_fae852e3942be7c2747349bedd030cad.setContent(html_6e550cfe9c95862a85b47ec956f483a7);
+            
+        
+
+        marker_435d4519ad070e271e539338900ed399.bindPopup(popup_fae852e3942be7c2747349bedd030cad)
+        ;
+
+        
+    
+    
+            marker_435d4519ad070e271e539338900ed399.bindTooltip(
+                `<div>
+                     23/12/2022
+ Crew on board: RB , IG , RO , JT , GH
+ Crew on shore: nan
+ Shout tags: Medical, Rescue, Environmental, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab8ff402a6b435fb78318ea53a9c03c8 = L.marker(
+                [56.27776374678452, -4.696937813171928],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_9f1654ae02211cea0b5fcc9e001028d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ab8ff402a6b435fb78318ea53a9c03c8.setIcon(icon_9f1654ae02211cea0b5fcc9e001028d0);
+        
+    
+        var popup_0c58e987985a77afcd130eea2c4c9160 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_190072500a8a5b4ca4c4099699ca3062 = $(`<div id="html_190072500a8a5b4ca4c4099699ca3062" style="width: 100.0%; height: 100.0%;">Shout details:   Paged by Police Scotland to assist male stranded on West Highland Way due to weather conditions causing a bridge over a waterfall to be washed away. Walker was uNoneble to continue and was taken to Ardlui Hotel.</div>`)[0];
+                popup_0c58e987985a77afcd130eea2c4c9160.setContent(html_190072500a8a5b4ca4c4099699ca3062);
+            
+        
+
+        marker_ab8ff402a6b435fb78318ea53a9c03c8.bindPopup(popup_0c58e987985a77afcd130eea2c4c9160)
+        ;
+
+        
+    
+    
+            marker_ab8ff402a6b435fb78318ea53a9c03c8.bindTooltip(
+                `<div>
+                     19/12/2022
+ Crew on board: ABJ,ABS, RB, IG, JT
+ Crew on shore: nan
+ Shout tags: Rescue, Environmental, Medical, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96a75d1256ad213b912351de0419c083 = L.marker(
+                [56.006626579770206, -4.592068482384204],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_5da7c263ff7a06597c55e83cba91e699 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_96a75d1256ad213b912351de0419c083.setIcon(icon_5da7c263ff7a06597c55e83cba91e699);
+        
+    
+        var popup_569b500077a19e8666f9fed404b69e42 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ca089a6eb93f98def009a810ac324225 = $(`<div id="html_ca089a6eb93f98def009a810ac324225" style="width: 100.0%; height: 100.0%;">Shout details:   Female in the water within the lagoon at Loch Lomond aquarium</div>`)[0];
+                popup_569b500077a19e8666f9fed404b69e42.setContent(html_ca089a6eb93f98def009a810ac324225);
+            
+        
+
+        marker_96a75d1256ad213b912351de0419c083.bindPopup(popup_569b500077a19e8666f9fed404b69e42)
+        ;
+
+        
+    
+    
+            marker_96a75d1256ad213b912351de0419c083.bindTooltip(
+                `<div>
+                     27/11/2022
+ Crew on board: DON, AJM , JT , ABJ
+ Crew on shore: nan
+ Shout tags: Medical, Rescue, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30a21151049588d7e5c5ebe94d5792c4 = L.marker(
+                [56.08382700802031, -4.576045634919164],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_d65901a0255ac5bb2378cac4c7860831 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_30a21151049588d7e5c5ebe94d5792c4.setIcon(icon_d65901a0255ac5bb2378cac4c7860831);
+        
+    
+        var popup_c9a0da2e5cca13680626dc10376a5c07 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0bc9abbcbfeb6add911e00552bbf24c9 = $(`<div id="html_0bc9abbcbfeb6add911e00552bbf24c9" style="width: 100.0%; height: 100.0%;">Shout details:   Reports of two paddle boarder in difficulty, one in water. Caught out by high winds. One wasnt wearing correct attire for out in water. Luckily this one did not enter the water. Both had PFDS on. Treated for minor sings of hypothermia and transported back to millaROchy bay and got warmed up and changed in there car</div>`)[0];
+                popup_c9a0da2e5cca13680626dc10376a5c07.setContent(html_0bc9abbcbfeb6add911e00552bbf24c9);
+            
+        
+
+        marker_30a21151049588d7e5c5ebe94d5792c4.bindPopup(popup_c9a0da2e5cca13680626dc10376a5c07)
+        ;
+
+        
+    
+    
+            marker_30a21151049588d7e5c5ebe94d5792c4.bindTooltip(
+                `<div>
+                     21/11/2022
+ Crew on board: RB, TR, GD, AJM
+ Crew on shore: nan
+ Shout tags: Rescue, Medical, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0cb18dacd2e46da3281c3d67ee24e6ca = L.marker(
+                [56.006626579770206, -4.592068482384204],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_6d4c3d40e9e6b8f7bb98c754e708aa0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0cb18dacd2e46da3281c3d67ee24e6ca.setIcon(icon_6d4c3d40e9e6b8f7bb98c754e708aa0b);
+        
+    
+        var popup_5e43a7d4c32f02bb88bcde3c8a322dc9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8ec32c61655553204a1d21baa4e713ea = $(`<div id="html_8ec32c61655553204a1d21baa4e713ea" style="width: 100.0%; height: 100.0%;">Shout details:   Crew tasked to assist police scotland with a female in the water at the lagoon within Loch Lomond shores</div>`)[0];
+                popup_5e43a7d4c32f02bb88bcde3c8a322dc9.setContent(html_8ec32c61655553204a1d21baa4e713ea);
+            
+        
+
+        marker_0cb18dacd2e46da3281c3d67ee24e6ca.bindPopup(popup_5e43a7d4c32f02bb88bcde3c8a322dc9)
+        ;
+
+        
+    
+    
+            marker_0cb18dacd2e46da3281c3d67ee24e6ca.bindTooltip(
+                `<div>
+                     25/10/2022
+ Crew on board: RO , DON , AJM , PBT
+ Crew on shore: nan
+ Shout tags: Rescue, Environmental
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0cd695dc0b4cbdeeafdb71d1e36f3b8e = L.marker(
+                [56.15876301240135, -4.644993148210679],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_eae8d55e65acbde9b1b1ce20ce5dbe5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_0cd695dc0b4cbdeeafdb71d1e36f3b8e.setIcon(icon_eae8d55e65acbde9b1b1ce20ce5dbe5a);
+        
+    
+        var popup_db410362de75fe5dc961991996756d4a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fe9a92e68304c4379ded643c1275a97d = $(`<div id="html_fe9a92e68304c4379ded643c1275a97d" style="width: 100.0%; height: 100.0%;">Shout details:   Collect Scottish ambulance service crew at ROwardenNone jetty & assist them in locating a 32yom who was suffering a suspected allergic reaction.
+ Crew along with ambulance staff completed shore search prior to male been found on the high ROad by mountain rescue team. Handed to ambulance crew for assessment</div>`)[0];
+                popup_db410362de75fe5dc961991996756d4a.setContent(html_fe9a92e68304c4379ded643c1275a97d);
+            
+        
+
+        marker_0cd695dc0b4cbdeeafdb71d1e36f3b8e.bindPopup(popup_db410362de75fe5dc961991996756d4a)
+        ;
+
+        
+    
+    
+            marker_0cd695dc0b4cbdeeafdb71d1e36f3b8e.bindTooltip(
+                `<div>
+                     17/10/2022
+ Crew on board: RB , AM , TR
+ Crew on shore: nan
+ Shout tags: Medical, Rescue, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b9aaeffe59c8c6a4037f831fbe0ee93 = L.marker(
+                [56.01563834439784, -4.60969103488198],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_c009e91b9df659ba1b5401369d8a4490 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6b9aaeffe59c8c6a4037f831fbe0ee93.setIcon(icon_c009e91b9df659ba1b5401369d8a4490);
+        
+    
+        var popup_b2c45e0e93e9083d7a2600e97f3be08c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4d542387a38a2092c137cb8ae6c8b045 = $(`<div id="html_4d542387a38a2092c137cb8ae6c8b045" style="width: 100.0%; height: 100.0%;">Shout details:   Object in the water blue in colour , helium balloon recovered fROm the water by crew</div>`)[0];
+                popup_b2c45e0e93e9083d7a2600e97f3be08c.setContent(html_4d542387a38a2092c137cb8ae6c8b045);
+            
+        
+
+        marker_6b9aaeffe59c8c6a4037f831fbe0ee93.bindPopup(popup_b2c45e0e93e9083d7a2600e97f3be08c)
+        ;
+
+        
+    
+    
+            marker_6b9aaeffe59c8c6a4037f831fbe0ee93.bindTooltip(
+                `<div>
+                     23/10/2022
+ Crew on board: DON, RB , PBT , AJM , GH
+ Crew on shore: nan
+ Shout tags: Medical, Rescue, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_90086a5a0f9baaf2f03a4f8ff294ca83 = L.marker(
+                [56.20193894999748, -4.684591403654904],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_f30bf334ab0244077da53f640ba4af93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_90086a5a0f9baaf2f03a4f8ff294ca83.setIcon(icon_f30bf334ab0244077da53f640ba4af93);
+        
+    
+        var popup_c303f423d49570402c41086d186de11c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f08815049d5e415669bbd4bbb82f9f48 = $(`<div id="html_f08815049d5e415669bbd4bbb82f9f48" style="width: 100.0%; height: 100.0%;">Shout details:   Male not well WHW details scetchy as was foreign NonetioNonel and did not have what 3 words, 5km north of ROwerdeNone, was actuAM on top path at viewing point above ROwcosh bothy.As above, once location identified it was passed to Lomond MRT to get casualty with assistance fROm air ambulance paramedics and SAS ambulance in stand by</div>`)[0];
+                popup_c303f423d49570402c41086d186de11c.setContent(html_f08815049d5e415669bbd4bbb82f9f48);
+            
+        
+
+        marker_90086a5a0f9baaf2f03a4f8ff294ca83.bindPopup(popup_c303f423d49570402c41086d186de11c)
+        ;
+
+        
+    
+    
+            marker_90086a5a0f9baaf2f03a4f8ff294ca83.bindTooltip(
+                `<div>
+                     17/10/2022
+ Crew on board: RB, TR, AJM
+ Crew on shore: nan
+ Shout tags: Miscellaneous, Environmental
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a01dc899de599d2af854060b727f18ca = L.marker(
+                [56.00661139538463, -4.596942932987792],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_626f63ffdce58d87997c6535cf0e296c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a01dc899de599d2af854060b727f18ca.setIcon(icon_626f63ffdce58d87997c6535cf0e296c);
+        
+    
+        var popup_51e22aa953417171bdf9845fac2940c3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_486d2839885e4116745a6a9ee9b723bd = $(`<div id="html_486d2839885e4116745a6a9ee9b723bd" style="width: 100.0%; height: 100.0%;">Shout details:   Paged by police Scotland to assist in ongoing incident within drumkinnon bay whereby there was a person within the water. LLRB attended immediately and after removing the person fROm the water LLRB pROvided medical care prior to the arrival of the ambulance. LLRB stood down and returned to base. The individual recovered fROm the water suffered no injury.</div>`)[0];
+                popup_51e22aa953417171bdf9845fac2940c3.setContent(html_486d2839885e4116745a6a9ee9b723bd);
+            
+        
+
+        marker_a01dc899de599d2af854060b727f18ca.bindPopup(popup_51e22aa953417171bdf9845fac2940c3)
+        ;
+
+        
+    
+    
+            marker_a01dc899de599d2af854060b727f18ca.bindTooltip(
+                `<div>
+                     03/10/2022
+ Crew on board: ABJ, AM, RO, GH , DON, DS, JT, PBT
+ Crew on shore: nan
+ Shout tags: Medical, Rescue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_907a513d7d121cfae9601c6a15bed957 = L.marker(
+                [56.00661139538463, -4.596942932987792],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_9e8aa489660c1464e327e0ef9cf417e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_907a513d7d121cfae9601c6a15bed957.setIcon(icon_9e8aa489660c1464e327e0ef9cf417e9);
+        
+    
+        var popup_23b69b1db4c0dd0a62bc775bc181a80f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9b5f65d5d64d81f8b513bf71d6ea1fbb = $(`<div id="html_9b5f65d5d64d81f8b513bf71d6ea1fbb" style="width: 100.0%; height: 100.0%;">Shout details:   Paged by Police Scotland to assist police,Scottish fire and rescue to remove female fROm the water at Drumkinnon Bay , about to leave DMMS police overview stood LLRB down , female came out the water on her own to police and ambulance</div>`)[0];
+                popup_23b69b1db4c0dd0a62bc775bc181a80f.setContent(html_9b5f65d5d64d81f8b513bf71d6ea1fbb);
+            
+        
+
+        marker_907a513d7d121cfae9601c6a15bed957.bindPopup(popup_23b69b1db4c0dd0a62bc775bc181a80f)
+        ;
+
+        
+    
+    
+            marker_907a513d7d121cfae9601c6a15bed957.bindTooltip(
+                `<div>
+                     24/09/2022
+ Crew on board: JT , AM, ABS
+ Crew on shore: TR
+ Shout tags: Medical, Rescue, Environmental
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8fe3b824a520d7e1a14c0f3c7cb9605 = L.marker(
+                [56.099521360909606, -4.563431774147899],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_6243f9ead9bb50e66530bff2abbbb831 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c8fe3b824a520d7e1a14c0f3c7cb9605.setIcon(icon_6243f9ead9bb50e66530bff2abbbb831);
+        
+    
+        var popup_2309e20c8e35cf84afe79bd6a6641c1b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c6500ca256893cb1ca784b7a2088101d = $(`<div id="html_c6500ca256893cb1ca784b7a2088101d" style="width: 100.0%; height: 100.0%;">Shout details:   Reports of a male on an upturned laser between Inchfad and Inchcailloch. After a short search the male was actuAM located on the North side of Inchfad. The casualty was recovered to an ambulance at MillaROchy Bay and the laser was righted and towed back to the sailing club.</div>`)[0];
+                popup_2309e20c8e35cf84afe79bd6a6641c1b.setContent(html_c6500ca256893cb1ca784b7a2088101d);
+            
+        
+
+        marker_c8fe3b824a520d7e1a14c0f3c7cb9605.bindPopup(popup_2309e20c8e35cf84afe79bd6a6641c1b)
+        ;
+
+        
+    
+    
+            marker_c8fe3b824a520d7e1a14c0f3c7cb9605.bindTooltip(
+                `<div>
+                     13/09/2022
+ Crew on board: CG, IG, RO, AM
+ Crew on shore: nan
+ Shout tags: Mechanical, Rescue, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18fd2d95c0e9fff8ab293bd52e07c76b = L.marker(
+                [56.0827281246468, -4.608704286464475],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_bb73050519e64594056c2ceeb1c2a39d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_18fd2d95c0e9fff8ab293bd52e07c76b.setIcon(icon_bb73050519e64594056c2ceeb1c2a39d);
+        
+    
+        var popup_261d765e90e634a1a615e2b272008631 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_041b07eb3c45018a57d59bd599dc1981 = $(`<div id="html_041b07eb3c45018a57d59bd599dc1981" style="width: 100.0%; height: 100.0%;">Shout details:   16ft fishing Vessel with two males on board out of ROwardenNone suffering engine failure , vessel was towed to balmaha & 1 occupant was thereafter transported by rescue boat to ROwardenNone to collect his vehicle & trailer</div>`)[0];
+                popup_261d765e90e634a1a615e2b272008631.setContent(html_041b07eb3c45018a57d59bd599dc1981);
+            
+        
+
+        marker_18fd2d95c0e9fff8ab293bd52e07c76b.bindPopup(popup_261d765e90e634a1a615e2b272008631)
+        ;
+
+        
+    
+    
+            marker_18fd2d95c0e9fff8ab293bd52e07c76b.bindTooltip(
+                `<div>
+                     11/09/2022
+ Crew on board: DON , AJM, GH, RO
+ Crew on shore: nan
+ Shout tags: Medical, Rescue, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cdbfcf76d9cdbeda711e852d5b1629dc = L.marker(
+                [56.27776374678452, -4.696937813171928],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_27c3f696befdba0858dd031a1407ecc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_cdbfcf76d9cdbeda711e852d5b1629dc.setIcon(icon_27c3f696befdba0858dd031a1407ecc1);
+        
+    
+        var popup_8a8be84e1791b880862232fb8e7fc60d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7e89270d8533078cc1ed185eb665ce20 = $(`<div id="html_7e89270d8533078cc1ed185eb665ce20" style="width: 100.0%; height: 100.0%;">Shout details:   Female walker who had sustained an ankle injury following a fall , female was able to pROvide what 3 words to emergency services which got us to her location. Female was assessed by our crew , treated , packaged and transported to awaiting ambulance at Inveruglas</div>`)[0];
+                popup_8a8be84e1791b880862232fb8e7fc60d.setContent(html_7e89270d8533078cc1ed185eb665ce20);
+            
+        
+
+        marker_cdbfcf76d9cdbeda711e852d5b1629dc.bindPopup(popup_8a8be84e1791b880862232fb8e7fc60d)
+        ;
+
+        
+    
+    
+            marker_cdbfcf76d9cdbeda711e852d5b1629dc.bindTooltip(
+                `<div>
+                     08/09/2022
+ Crew on board: DON,GERARD , AJM ,RO ,IG ,EM , DS
+ Crew on shore: RB, TR
+ Shout tags: Medical, Rescue, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1844e539834c57be24c6eba11882060e = L.marker(
+                [56.20448674375026, -4.706992883671947],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_e12b239b38bfba772f14e61927cad436 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1844e539834c57be24c6eba11882060e.setIcon(icon_e12b239b38bfba772f14e61927cad436);
+        
+    
+        var popup_28ac1207814d1d9dcfd0a8aa51867adc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a36e998b1fc9afc000c981249ec16cae = $(`<div id="html_a36e998b1fc9afc000c981249ec16cae" style="width: 100.0%; height: 100.0%;">Shout details:   Called out by police Scotland, Located Male and female walkers fROm What 3 words ,taken unwell while walking the west highland way sickness, high temperatures LLRB crew carried out primary medical survey  on both casualties , assisted casualties onto LLRB conveyed to MilarROchy bay campsite , casualties did not want ambulance assistance. Spoke with Police Scotland contROl happy for LLRB to stand down return to Duncan Mill Slipway</div>`)[0];
+                popup_28ac1207814d1d9dcfd0a8aa51867adc.setContent(html_a36e998b1fc9afc000c981249ec16cae);
+            
+        
+
+        marker_1844e539834c57be24c6eba11882060e.bindPopup(popup_28ac1207814d1d9dcfd0a8aa51867adc)
+        ;
+
+        
+    
+    
+            marker_1844e539834c57be24c6eba11882060e.bindTooltip(
+                `<div>
+                     06/09/2022
+ Crew on board: JT , AJM, DON , IG
+ Crew on shore: nan
+ Shout tags: Medical, Rescue, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_056c2de5bdeb51159bed47c4ca4161d8 = L.marker(
+                [56.080515940237966, -4.582972938746762],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_3cecfbe50d2cb38686cdaf3d66991825 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_056c2de5bdeb51159bed47c4ca4161d8.setIcon(icon_3cecfbe50d2cb38686cdaf3d66991825);
+        
+    
+        var popup_a3d23aa3382b82f60c73f37181ce0c88 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6d7c634bdeb880b09767998d1e9353e3 = $(`<div id="html_6d7c634bdeb880b09767998d1e9353e3" style="width: 100.0%; height: 100.0%;">Shout details:   Police Scotland called LLRB out Female Paddle boarder in tROuble uNoneble to get back to MilarROchy  bay , located female by what 3 words treated her for mild hypothermia, taken to MilarROchy bay to waiting police officers ambulance not required</div>`)[0];
+                popup_a3d23aa3382b82f60c73f37181ce0c88.setContent(html_6d7c634bdeb880b09767998d1e9353e3);
+            
+        
+
+        marker_056c2de5bdeb51159bed47c4ca4161d8.bindPopup(popup_a3d23aa3382b82f60c73f37181ce0c88)
+        ;
+
+        
+    
+    
+            marker_056c2de5bdeb51159bed47c4ca4161d8.bindTooltip(
+                `<div>
+                     03/09/2022
+ Crew on board: ABJ,JT, DON
+ Crew on shore: nan
+ Shout tags: Medical, Rescue, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30822b2cccbbe44de5c1d24f2bc2e331 = L.marker(
+                [56.0827281246468, -4.608704286464475],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_0a53b59c70c9b87157db21155446a4a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_30822b2cccbbe44de5c1d24f2bc2e331.setIcon(icon_0a53b59c70c9b87157db21155446a4a8);
+        
+    
+        var popup_4366aee32ba28e39483bab84978aaf70 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_77cd3382c00066d94d84cd053ee87e8b = $(`<div id="html_77cd3382c00066d94d84cd053ee87e8b" style="width: 100.0%; height: 100.0%;">Shout details:   BROken down 17ft bow rider with 3 adults onboard, towed to simon’s yard in river leven</div>`)[0];
+                popup_4366aee32ba28e39483bab84978aaf70.setContent(html_77cd3382c00066d94d84cd053ee87e8b);
+            
+        
+
+        marker_30822b2cccbbe44de5c1d24f2bc2e331.bindPopup(popup_4366aee32ba28e39483bab84978aaf70)
+        ;
+
+        
+    
+    
+            marker_30822b2cccbbe44de5c1d24f2bc2e331.bindTooltip(
+                `<div>
+                     02/09/2022
+ Crew on board: RB JT ,GH, DON
+ Crew on shore: nan
+ Shout tags: Mechanical, Rescue, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16fb27072cb618f4808bbce4b3ce1fc6 = L.marker(
+                [56.08999907141294, -4.615257528670066],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_886f2bb29344664ad872877abbd9c098 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_16fb27072cb618f4808bbce4b3ce1fc6.setIcon(icon_886f2bb29344664ad872877abbd9c098);
+        
+    
+        var popup_bb775fa003bfdad55efb130b6da28e7b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9235db362ef701ffde28df52f99e7e42 = $(`<div id="html_9235db362ef701ffde28df52f99e7e42" style="width: 100.0%; height: 100.0%;">Shout details:   After arriving back at DMMS fROm a previous shout, crew were made aware of a bit which had bROken down on the south west side of inch conNonechan. LLRB attended, located the vessel and towed it back to DMMS</div>`)[0];
+                popup_bb775fa003bfdad55efb130b6da28e7b.setContent(html_9235db362ef701ffde28df52f99e7e42);
+            
+        
+
+        marker_16fb27072cb618f4808bbce4b3ce1fc6.bindPopup(popup_bb775fa003bfdad55efb130b6da28e7b)
+        ;
+
+        
+    
+    
+            marker_16fb27072cb618f4808bbce4b3ce1fc6.bindTooltip(
+                `<div>
+                     30/08/2022
+ Crew on board: ABJ, GH , AJM
+ Crew on shore: nan
+ Shout tags: Mechanical, Rescue, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e14c431b3580d2c96f1e9a88bf80df19 = L.marker(
+                [56.07932539432166, -4.556913076095861],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_55fbb4817ffbbeffe326e1fa500488d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e14c431b3580d2c96f1e9a88bf80df19.setIcon(icon_55fbb4817ffbbeffe326e1fa500488d4);
+        
+    
+        var popup_a945576d6b4d15373c4755c68e8b1adb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7ceba59df233920b18a243b7f7fdcbad = $(`<div id="html_7ceba59df233920b18a243b7f7fdcbad" style="width: 100.0%; height: 100.0%;">Shout details:   Paged by Police Scotland due to concerns for an unknown male who had launched fROm Balmaha in a small inflatable “ids toy” style dingy, without a life jacket. LLRB attended and posed with police as did the NPA. The male was located and our concerns due to his vessel and lack of a life jacket or safety equipment were explained to the male. LLRB then conveyed the male back to Balmaha  where he spoke with police</div>`)[0];
+                popup_a945576d6b4d15373c4755c68e8b1adb.setContent(html_7ceba59df233920b18a243b7f7fdcbad);
+            
+        
+
+        marker_e14c431b3580d2c96f1e9a88bf80df19.bindPopup(popup_a945576d6b4d15373c4755c68e8b1adb)
+        ;
+
+        
+    
+    
+            marker_e14c431b3580d2c96f1e9a88bf80df19.bindTooltip(
+                `<div>
+                     30/08/2022
+ Crew on board: ABJ, TR, GH , AJM
+ Crew on shore: nan
+ Shout tags: Mechanical, Rescue, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39ba9e0c535412d98a2ef24472e13851 = L.marker(
+                [56.00803490314589, -4.600737850126115],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_c4a95d42d6c53b2ee134a6c6efb8aae6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_39ba9e0c535412d98a2ef24472e13851.setIcon(icon_c4a95d42d6c53b2ee134a6c6efb8aae6);
+        
+    
+        var popup_c02a59f47b09dade2182047a91dcbf9c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9bca6a1d4bfb3f00c9a2c5131265842a = $(`<div id="html_9bca6a1d4bfb3f00c9a2c5131265842a" style="width: 100.0%; height: 100.0%;">Shout details:   LLRB were called to assist a boat suffering mechanical failure just out fROm Loch Lomond Golf Course. After locating the stricken vessel our crew secured a tow line and began the tow back to CameROn House marina.</div>`)[0];
+                popup_c02a59f47b09dade2182047a91dcbf9c.setContent(html_9bca6a1d4bfb3f00c9a2c5131265842a);
+            
+        
+
+        marker_39ba9e0c535412d98a2ef24472e13851.bindPopup(popup_c02a59f47b09dade2182047a91dcbf9c)
+        ;
+
+        
+    
+    
+            marker_39ba9e0c535412d98a2ef24472e13851.bindTooltip(
+                `<div>
+                     24/08/2022
+ Crew on board: ABJ, TR, GH
+ Crew on shore: nan
+ Shout tags: Mechanical, Rescue, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a828d300b26a9e6853c9534639d4cb56 = L.marker(
+                [56.146496106662575, -4.660243173922467],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_d0bbc327b0a3a5b95464687c1957e5a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a828d300b26a9e6853c9534639d4cb56.setIcon(icon_d0bbc327b0a3a5b95464687c1957e5a6);
+        
+    
+        var popup_15445f4772cd1db1ed9f22d95d32d2ee = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d2cdbfa32b232b7d6840f2727277a933 = $(`<div id="html_d2cdbfa32b232b7d6840f2727277a933" style="width: 100.0%; height: 100.0%;">Shout details:   Paged by police Scotland to assist boat which had run agROund on InveRBeg sandbar causing damage to the engine. LLRB attended as did NPA and located boat which was towed to Luss pier where the owner repaired the damage and returned to balloch under his own power</div>`)[0];
+                popup_15445f4772cd1db1ed9f22d95d32d2ee.setContent(html_d2cdbfa32b232b7d6840f2727277a933);
+            
+        
+
+        marker_a828d300b26a9e6853c9534639d4cb56.bindPopup(popup_15445f4772cd1db1ed9f22d95d32d2ee)
+        ;
+
+        
+    
+    
+            marker_a828d300b26a9e6853c9534639d4cb56.bindTooltip(
+                `<div>
+                     23/08/2022
+ Crew on board: ABJ, RB, GH , JT
+ Crew on shore: ABS
+ Shout tags: Mechanical, Rescue, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e83c1f46f4a4dc7cf76db1eab9d58c9 = L.marker(
+                [56.06984429562838, -4.56873974602854],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_ff04a1d9510e380cff8264a060036bf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8e83c1f46f4a4dc7cf76db1eab9d58c9.setIcon(icon_ff04a1d9510e380cff8264a060036bf2);
+        
+    
+        var popup_3b6a8d108d0ac1d34ef71ab8d63ee545 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_97caa4b99634c32d2b7cc35f0c445a35 = $(`<div id="html_97caa4b99634c32d2b7cc35f0c445a35" style="width: 100.0%; height: 100.0%;">Shout details:   12foot jet boat. Engine tROuble. 2 males on board</div>`)[0];
+                popup_3b6a8d108d0ac1d34ef71ab8d63ee545.setContent(html_97caa4b99634c32d2b7cc35f0c445a35);
+            
+        
+
+        marker_8e83c1f46f4a4dc7cf76db1eab9d58c9.bindPopup(popup_3b6a8d108d0ac1d34ef71ab8d63ee545)
+        ;
+
+        
+    
+    
+            marker_8e83c1f46f4a4dc7cf76db1eab9d58c9.bindTooltip(
+                `<div>
+                     14/08/2022
+ Crew on board: RO, AM, GH, EM, AJM
+ Crew on shore: DON
+ Shout tags: Mechanical, Rescue, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7bbaadacf70d613839472f9a6ea94476 = L.marker(
+                [56.00803490314589, -4.600737850126115],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_a3f56e94209920de3648a3ebf383acce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7bbaadacf70d613839472f9a6ea94476.setIcon(icon_a3f56e94209920de3648a3ebf383acce);
+        
+    
+        var popup_6d7aaea1d2cc8d71ded11e82ec04c66e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3847d0a51c30158a0a226de3280fd7cd = $(`<div id="html_3847d0a51c30158a0a226de3280fd7cd" style="width: 100.0%; height: 100.0%;">Shout details:   25ft boat. Engine tROuble. 2Adults, 2 Children on board</div>`)[0];
+                popup_6d7aaea1d2cc8d71ded11e82ec04c66e.setContent(html_3847d0a51c30158a0a226de3280fd7cd);
+            
+        
+
+        marker_7bbaadacf70d613839472f9a6ea94476.bindPopup(popup_6d7aaea1d2cc8d71ded11e82ec04c66e)
+        ;
+
+        
+    
+    
+            marker_7bbaadacf70d613839472f9a6ea94476.bindTooltip(
+                `<div>
+                     14/08/2022
+ Crew on board: RO, AM, GH, EM, AJM
+ Crew on shore: DON
+ Shout tags: Mechanical, Rescue, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1207814e5a3963061c94bbcf36a00fc6 = L.marker(
+                [56.146496106662575, -4.660243173922467],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_c3f125a118dddf197fb857e261095c32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1207814e5a3963061c94bbcf36a00fc6.setIcon(icon_c3f125a118dddf197fb857e261095c32);
+        
+    
+        var popup_c7e2a72bef104729ebfde77c89dfc547 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ff67fa30f5f5a53ffb67194b05540a8e = $(`<div id="html_ff67fa30f5f5a53ffb67194b05540a8e" style="width: 100.0%; height: 100.0%;">Shout details:   BROken down rib at InveRBeg. The rib was located just south of InveRBeg on the shore with its 3 occupants. The boat was towed by LLRB to DMS</div>`)[0];
+                popup_c7e2a72bef104729ebfde77c89dfc547.setContent(html_ff67fa30f5f5a53ffb67194b05540a8e);
+            
+        
+
+        marker_1207814e5a3963061c94bbcf36a00fc6.bindPopup(popup_c7e2a72bef104729ebfde77c89dfc547)
+        ;
+
+        
+    
+    
+            marker_1207814e5a3963061c94bbcf36a00fc6.bindTooltip(
+                `<div>
+                     13/08/2022
+ Crew on board: RB, DS, TR, EM, JT
+ Crew on shore: nan
+ Shout tags: Mechanical, Rescue, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc4c1bc3383a9bcb4d5d5d0ed02a4e9d = L.marker(
+                [56.01259466002678, -4.589535332254012],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_6b84f694ff3ee454424a63e2c8e3322a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cc4c1bc3383a9bcb4d5d5d0ed02a4e9d.setIcon(icon_6b84f694ff3ee454424a63e2c8e3322a);
+        
+    
+        var popup_f8b2805c4d5647be11254515cad5aed8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d2f74c189e58915199becde30d01ed9a = $(`<div id="html_d2f74c189e58915199becde30d01ed9a" style="width: 100.0%; height: 100.0%;">Shout details:   Engine failure and stranded on shore / ROcks ,4 persons onboard checked all are okay , rescue crew removed vessel off shoreline, towed alongside rescue boat back to DMMS</div>`)[0];
+                popup_f8b2805c4d5647be11254515cad5aed8.setContent(html_d2f74c189e58915199becde30d01ed9a);
+            
+        
+
+        marker_cc4c1bc3383a9bcb4d5d5d0ed02a4e9d.bindPopup(popup_f8b2805c4d5647be11254515cad5aed8)
+        ;
+
+        
+    
+    
+            marker_cc4c1bc3383a9bcb4d5d5d0ed02a4e9d.bindTooltip(
+                `<div>
+                     08/08/2022
+ Crew on board: JT, AM, DS
+ Crew on shore: RB, IG , CC , PD , DS
+ Shout tags: Mechanical, Rescue, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49f8830c93cf9ae336195c394c97242b = L.marker(
+                [56.01290756495266, -4.605857354557195],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_c29c636acc10958890a425d0fea4b229 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_49f8830c93cf9ae336195c394c97242b.setIcon(icon_c29c636acc10958890a425d0fea4b229);
+        
+    
+        var popup_da3fb657a7ce216f7ab13c8843771964 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4722195bfefa0a9bb3059775d77bf6d2 = $(`<div id="html_4722195bfefa0a9bb3059775d77bf6d2" style="width: 100.0%; height: 100.0%;">Shout details:   On return fROm our first shout of the day we were hailed by a passing paddleboarder who was assisting 2 x females in a toy inflatable. On appROach it became apparent they had lost one of the inflatables paddles oveRBoard and were struggling due to the direction of the wind, it was also noted that both occupants were not wearing lifejackets. LLRB assisted by taking the females aboard the St John and returned them to the shore with suitable words of advice given.</div>`)[0];
+                popup_da3fb657a7ce216f7ab13c8843771964.setContent(html_4722195bfefa0a9bb3059775d77bf6d2);
+            
+        
+
+        marker_49f8830c93cf9ae336195c394c97242b.bindPopup(popup_da3fb657a7ce216f7ab13c8843771964)
+        ;
+
+        
+    
+    
+            marker_49f8830c93cf9ae336195c394c97242b.bindTooltip(
+                `<div>
+                     01/08/2022
+ Crew on board: AM, JT, AJM, DS
+ Crew on shore: nan
+ Shout tags: Mechanical, Rescue, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4976247a63a646b022befc2c14e81758 = L.marker(
+                [56.20448674375026, -4.706992883671947],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_213d66065c558fb5518066d9f9279518 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4976247a63a646b022befc2c14e81758.setIcon(icon_213d66065c558fb5518066d9f9279518);
+        
+    
+        var popup_6e4d51eb63d8e1f3b802696f1854650d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a03a648f88c957483d5519b36abc9b1c = $(`<div id="html_a03a648f88c957483d5519b36abc9b1c" style="width: 100.0%; height: 100.0%;">Shout details:   Report of a women on the WHW with abdomiNonel pains, feeling very Noneuseous and uNoneble to continue her walk. Once on scene LLRB Crew with the assistance of the LLNP Rangers assessed the casualty, during the obersvations it became apparent she hadn't ate much or taken enough fluids over the course of the day,  LLRB monitored the casualty and once she was stable took her and her friend over to TaRBet to allow them to continue their journey</div>`)[0];
+                popup_6e4d51eb63d8e1f3b802696f1854650d.setContent(html_a03a648f88c957483d5519b36abc9b1c);
+            
+        
+
+        marker_4976247a63a646b022befc2c14e81758.bindPopup(popup_6e4d51eb63d8e1f3b802696f1854650d)
+        ;
+
+        
+    
+    
+            marker_4976247a63a646b022befc2c14e81758.bindTooltip(
+                `<div>
+                     01/08/2022
+ Crew on board: AM, JT, AJM,DS
+ Crew on shore: ABJ
+ Shout tags: Mechanical, Rescue, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fbd2314a61522415373663041611ec40 = L.marker(
+                [56.155673139243554, -4.64406388017064],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_bb7c47746919f4accd33123e4a35013e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fbd2314a61522415373663041611ec40.setIcon(icon_bb7c47746919f4accd33123e4a35013e);
+        
+    
+        var popup_97cf6a0e58a434f6492d72c5a29ebfef = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_620912adf2069dbcdbe477452ebc3a1f = $(`<div id="html_620912adf2069dbcdbe477452ebc3a1f" style="width: 100.0%; height: 100.0%;">Shout details:   Assist with Scottish Ambulance service, walker has scalded her lower right leg with hot boiling water, on arrival Sort ambulance staff treating casualty, took casualty onto LLRBoat to ROwardennen pier to meet with Ambulance personnel</div>`)[0];
+                popup_97cf6a0e58a434f6492d72c5a29ebfef.setContent(html_620912adf2069dbcdbe477452ebc3a1f);
+            
+        
+
+        marker_fbd2314a61522415373663041611ec40.bindPopup(popup_97cf6a0e58a434f6492d72c5a29ebfef)
+        ;
+
+        
+    
+    
+            marker_fbd2314a61522415373663041611ec40.bindTooltip(
+                `<div>
+                     31/07/2022
+ Crew on board: RO, DS , JT,ABS ,
+ Crew on shore: nan
+ Shout tags: Medical, Rescue, Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed80d50f8726aea36fbed26eb2edc024 = L.marker(
+                [56.15876301240135, -4.644993148210679],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_f0233482672c09c8b393f7d5ac60e032 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ed80d50f8726aea36fbed26eb2edc024.setIcon(icon_f0233482672c09c8b393f7d5ac60e032);
+        
+    
+        var popup_dc95566be31e50e6a185210f107a5d9f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_65987a4cf6b76905d5b3b4b54bd5df0e = $(`<div id="html_65987a4cf6b76905d5b3b4b54bd5df0e" style="width: 100.0%; height: 100.0%;">Shout details:   Paged by police Scotland due to reports of an item floating in the water which was thought to be a body. LLRB attended as did Scottish Fire and Rescue Service, Police Scotland and Scottish Ambulance Service. Upon arrival members of the public directed LLRB to the floating item in question. This was in fact a mooring buoy. LLRB and Police Scotland deemed the incident to be a false alarm with good intent and LLRB stood down.</div>`)[0];
+                popup_dc95566be31e50e6a185210f107a5d9f.setContent(html_65987a4cf6b76905d5b3b4b54bd5df0e);
+            
+        
+
+        marker_ed80d50f8726aea36fbed26eb2edc024.bindPopup(popup_dc95566be31e50e6a185210f107a5d9f)
+        ;
+
+        
+    
+    
+            marker_ed80d50f8726aea36fbed26eb2edc024.bindTooltip(
+                `<div>
+                     28/07/2022
+ Crew on board: ABJ, AM, GH , DS, DON
+ Crew on shore: nan
+ Shout tags: FalseAlarm
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5deb1025c61ed0f1062ef492d56b44da = L.marker(
+                [56.30209639762101, -4.707269511522368],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_158a6553be8e103312afafad9cc229af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_5deb1025c61ed0f1062ef492d56b44da.setIcon(icon_158a6553be8e103312afafad9cc229af);
+        
+    
+        var popup_5000858d9251683e5d86d230e2f63664 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_312a459c330475442aaa4c8dd131172c = $(`<div id="html_312a459c330475442aaa4c8dd131172c" style="width: 100.0%; height: 100.0%;">Shout details:   camper tent flooed due to burn bursting banks, flash flooding</div>`)[0];
+                popup_5000858d9251683e5d86d230e2f63664.setContent(html_312a459c330475442aaa4c8dd131172c);
+            
+        
+
+        marker_5deb1025c61ed0f1062ef492d56b44da.bindPopup(popup_5000858d9251683e5d86d230e2f63664)
+        ;
+
+        
+    
+    
+            marker_5deb1025c61ed0f1062ef492d56b44da.bindTooltip(
+                `<div>
+                     24/07/2022
+ Crew on board: ABS, EM, DS
+ Crew on shore: nan
+ Shout tags: Medical,Rescue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9cf00f45ef4f0a769ce426b55f9cfbd1 = L.marker(
+                [56.02767886783944, -4.628753973925852],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_770055b99d19369e38e5b2d5eb868c71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_9cf00f45ef4f0a769ce426b55f9cfbd1.setIcon(icon_770055b99d19369e38e5b2d5eb868c71);
+        
+    
+        var popup_326883c332af556278a5ec6090980424 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_519e10ef8783160491ccf12416de70b0 = $(`<div id="html_519e10ef8783160491ccf12416de70b0" style="width: 100.0%; height: 100.0%;">Shout details:   bROken down boat, towed to DMMS</div>`)[0];
+                popup_326883c332af556278a5ec6090980424.setContent(html_519e10ef8783160491ccf12416de70b0);
+            
+        
+
+        marker_9cf00f45ef4f0a769ce426b55f9cfbd1.bindPopup(popup_326883c332af556278a5ec6090980424)
+        ;
+
+        
+    
+    
+            marker_9cf00f45ef4f0a769ce426b55f9cfbd1.bindTooltip(
+                `<div>
+                     23/07/2022
+ Crew on board: EM ,DS
+ Crew on shore: nan
+ Shout tags: Mechanical,Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19066729eb1e66cd9aa88ba499da2322 = L.marker(
+                [56.0827281246468, -4.608704286464475],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_9ddc4211e1915dc25c42e94b33efa971 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_19066729eb1e66cd9aa88ba499da2322.setIcon(icon_9ddc4211e1915dc25c42e94b33efa971);
+        
+    
+        var popup_5d5cbb47be85f3746513e73cf8ec1190 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f7be80c3b57ed7d2ae171f1b2d07a20c = $(`<div id="html_f7be80c3b57ed7d2ae171f1b2d07a20c" style="width: 100.0%; height: 100.0%;">Shout details:   male with heat stROke, assited and transffered to SAS at DMMS</div>`)[0];
+                popup_5d5cbb47be85f3746513e73cf8ec1190.setContent(html_f7be80c3b57ed7d2ae171f1b2d07a20c);
+            
+        
+
+        marker_19066729eb1e66cd9aa88ba499da2322.bindPopup(popup_5d5cbb47be85f3746513e73cf8ec1190)
+        ;
+
+        
+    
+    
+            marker_19066729eb1e66cd9aa88ba499da2322.bindTooltip(
+                `<div>
+                     19/07/2022
+ Crew on board: ABJ AJM ,IG ,AM, JT
+ Crew on shore: ABS, FR, RB
+ Shout tags: Medical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4576e1f1cc3d20a9ea4c893801822da8 = L.marker(
+                [56.08382700802031, -4.576045634919164],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_26219d5239714c4af746199a8bed49b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4576e1f1cc3d20a9ea4c893801822da8.setIcon(icon_26219d5239714c4af746199a8bed49b4);
+        
+    
+        var popup_4262fa6100b17168bc9798a687543809 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_94ab0ec833814f0a8a25101352ec2745 = $(`<div id="html_94ab0ec833814f0a8a25101352ec2745" style="width: 100.0%; height: 100.0%;">Shout details:   bROken down speedboat with 7 aboard</div>`)[0];
+                popup_4262fa6100b17168bc9798a687543809.setContent(html_94ab0ec833814f0a8a25101352ec2745);
+            
+        
+
+        marker_4576e1f1cc3d20a9ea4c893801822da8.bindPopup(popup_4262fa6100b17168bc9798a687543809)
+        ;
+
+        
+    
+    
+            marker_4576e1f1cc3d20a9ea4c893801822da8.bindTooltip(
+                `<div>
+                     19/07/2022
+ Crew on board: CG ,IG ,DS ,AM, DON, EM
+ Crew on shore: nan
+ Shout tags: Mechanical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ec64ee3f599ebf8ccc8cae0a584be4f = L.marker(
+                [56.081320056417496, -4.609252850575954],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_8e44242ab1f6cca61edf4ad6df192902 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0ec64ee3f599ebf8ccc8cae0a584be4f.setIcon(icon_8e44242ab1f6cca61edf4ad6df192902);
+        
+    
+        var popup_5040fc75899fa47d8b2ec732f03c2710 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_de848b526f25be389a170c8cad46b031 = $(`<div id="html_de848b526f25be389a170c8cad46b031" style="width: 100.0%; height: 100.0%;">Shout details:   bROken down boat , towed to DMMS</div>`)[0];
+                popup_5040fc75899fa47d8b2ec732f03c2710.setContent(html_de848b526f25be389a170c8cad46b031);
+            
+        
+
+        marker_0ec64ee3f599ebf8ccc8cae0a584be4f.bindPopup(popup_5040fc75899fa47d8b2ec732f03c2710)
+        ;
+
+        
+    
+    
+            marker_0ec64ee3f599ebf8ccc8cae0a584be4f.bindTooltip(
+                `<div>
+                     17/07/2022
+ Crew on board: AM ,PD, DS, GH ,AJ
+ Crew on shore: nan
+ Shout tags: Mechanical,Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84f4cbf1d63c36dd358bbca7482fc146 = L.marker(
+                [56.08822185192247, -4.619201252495064],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_4907c357609eaf2b39e2c19684e648f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_84f4cbf1d63c36dd358bbca7482fc146.setIcon(icon_4907c357609eaf2b39e2c19684e648f5);
+        
+    
+        var popup_2ecdc65619255320b7ff7443542505e2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1a209fa86de8cf713ad768a97a32d1f0 = $(`<div id="html_1a209fa86de8cf713ad768a97a32d1f0" style="width: 100.0%; height: 100.0%;">Shout details:   Multiple reports of a flare above islands, search completed nothing found</div>`)[0];
+                popup_2ecdc65619255320b7ff7443542505e2.setContent(html_1a209fa86de8cf713ad768a97a32d1f0);
+            
+        
+
+        marker_84f4cbf1d63c36dd358bbca7482fc146.bindPopup(popup_2ecdc65619255320b7ff7443542505e2)
+        ;
+
+        
+    
+    
+            marker_84f4cbf1d63c36dd358bbca7482fc146.bindTooltip(
+                `<div>
+                     16/07/2022
+ Crew on board: JT, TR
+ Crew on shore: nan
+ Shout tags: FalseAlarm,Search
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc91444ca7218ef73c38b7e82e383e8e = L.marker(
+                [56.05088096606834, -4.603218646384661],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_a3e638a46661373ced9e7ecfd1060c54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_cc91444ca7218ef73c38b7e82e383e8e.setIcon(icon_a3e638a46661373ced9e7ecfd1060c54);
+        
+    
+        var popup_6a22e85e34733fe600b8af73ecd70b03 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9bbcba10e70c331e3dfb2647389c49d8 = $(`<div id="html_9bbcba10e70c331e3dfb2647389c49d8" style="width: 100.0%; height: 100.0%;">Shout details:   jetski withengine failure towed to DMMS</div>`)[0];
+                popup_6a22e85e34733fe600b8af73ecd70b03.setContent(html_9bbcba10e70c331e3dfb2647389c49d8);
+            
+        
+
+        marker_cc91444ca7218ef73c38b7e82e383e8e.bindPopup(popup_6a22e85e34733fe600b8af73ecd70b03)
+        ;
+
+        
+    
+    
+            marker_cc91444ca7218ef73c38b7e82e383e8e.bindTooltip(
+                `<div>
+                     16/07/2022
+ Crew on board: JT, TR
+ Crew on shore: nan
+ Shout tags: Mechanical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13d12fc9b8eae881f2aae6515727450c = L.marker(
+                [56.25024823007158, -4.71121932222366],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_b048157f36a5714e379b73726d8765d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_13d12fc9b8eae881f2aae6515727450c.setIcon(icon_b048157f36a5714e379b73726d8765d4);
+        
+    
+        var popup_73241c7c42b8f0643bc52c1cfc3a8a42 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ce58b044a011955f8b24ff0f62a953a3 = $(`<div id="html_ce58b044a011955f8b24ff0f62a953a3" style="width: 100.0%; height: 100.0%;">Shout details:   fishing boat with mechanical failure towed to ardlui</div>`)[0];
+                popup_73241c7c42b8f0643bc52c1cfc3a8a42.setContent(html_ce58b044a011955f8b24ff0f62a953a3);
+            
+        
+
+        marker_13d12fc9b8eae881f2aae6515727450c.bindPopup(popup_73241c7c42b8f0643bc52c1cfc3a8a42)
+        ;
+
+        
+    
+    
+            marker_13d12fc9b8eae881f2aae6515727450c.bindTooltip(
+                `<div>
+                     16/07/2022
+ Crew on board: JT, TR
+ Crew on shore: nan
+ Shout tags: Mechanical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e6e5e4a8cd4f8dad040fd782af2cbec = L.marker(
+                [56.09921019008633, -4.562530551948111],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_2a79ec75f59a3c63f15537f3cb792978 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6e6e5e4a8cd4f8dad040fd782af2cbec.setIcon(icon_2a79ec75f59a3c63f15537f3cb792978);
+        
+    
+        var popup_6f578a2853eae5541b460f5bd3b6fdc1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a6577d94df5cf526b579d81a6d2b8cea = $(`<div id="html_a6577d94df5cf526b579d81a6d2b8cea" style="width: 100.0%; height: 100.0%;">Shout details:   person of concern on paddle board without pfd</div>`)[0];
+                popup_6f578a2853eae5541b460f5bd3b6fdc1.setContent(html_a6577d94df5cf526b579d81a6d2b8cea);
+            
+        
+
+        marker_6e6e5e4a8cd4f8dad040fd782af2cbec.bindPopup(popup_6f578a2853eae5541b460f5bd3b6fdc1)
+        ;
+
+        
+    
+    
+            marker_6e6e5e4a8cd4f8dad040fd782af2cbec.bindTooltip(
+                `<div>
+                     11/07/2022
+ Crew on board: RB, GH, JT, CG, AJM
+ Crew on shore: nan
+ Shout tags: Assistance
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd122c8f79dd1e19814dccaacdd7c72c = L.marker(
+                [56.012799165863, -4.588990376921557],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_8b258fafdebef9443bcfab15079896ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_bd122c8f79dd1e19814dccaacdd7c72c.setIcon(icon_8b258fafdebef9443bcfab15079896ff);
+        
+    
+        var popup_0d2b3d0c1a54808368dda895d09bdb24 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ee48a535d58863f120c8832e68f5992b = $(`<div id="html_ee48a535d58863f120c8832e68f5992b" style="width: 100.0%; height: 100.0%;">Shout details:   Reports of person in tROuble in water, stood down before launch</div>`)[0];
+                popup_0d2b3d0c1a54808368dda895d09bdb24.setContent(html_ee48a535d58863f120c8832e68f5992b);
+            
+        
+
+        marker_bd122c8f79dd1e19814dccaacdd7c72c.bindPopup(popup_0d2b3d0c1a54808368dda895d09bdb24)
+        ;
+
+        
+    
+    
+            marker_bd122c8f79dd1e19814dccaacdd7c72c.bindTooltip(
+                `<div>
+                     11/07/2022
+ Crew on board: RB, GH, JT, CG 
+ Crew on shore: nan
+ Shout tags: Rescue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5670a464a3d00b1c96cbccc2f80677fb = L.marker(
+                [56.10183211666065, -4.636544710349645],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_33688765e43048bf64dc13088ff0c3b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5670a464a3d00b1c96cbccc2f80677fb.setIcon(icon_33688765e43048bf64dc13088ff0c3b4);
+        
+    
+        var popup_524bee4dd47c4b4e889eaab4c1fc90dc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d0d79dd4cb461cc17e1c3f1cb8f90260 = $(`<div id="html_d0d79dd4cb461cc17e1c3f1cb8f90260" style="width: 100.0%; height: 100.0%;">Shout details:   Male struggling on paddle boat drifting towards inchloaNoneig</div>`)[0];
+                popup_524bee4dd47c4b4e889eaab4c1fc90dc.setContent(html_d0d79dd4cb461cc17e1c3f1cb8f90260);
+            
+        
+
+        marker_5670a464a3d00b1c96cbccc2f80677fb.bindPopup(popup_524bee4dd47c4b4e889eaab4c1fc90dc)
+        ;
+
+        
+    
+    
+            marker_5670a464a3d00b1c96cbccc2f80677fb.bindTooltip(
+                `<div>
+                     10/07/2022
+ Crew on board: CG ,RO, TR ,EM ,ABJ ,PD
+ Crew on shore: nan
+ Shout tags: Assistance
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16d5a88dafb21bf5f5dea7633a6d3f20 = L.marker(
+                [56.2993669719612, -4.701335813383964],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_d155d342fd719f235dcb9b74eeb6c719 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_16d5a88dafb21bf5f5dea7633a6d3f20.setIcon(icon_d155d342fd719f235dcb9b74eeb6c719);
+        
+    
+        var popup_dc9f13903f28fc367ddb806f4552c33e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_59427348ae59f77d19bbee9cc06d1542 = $(`<div id="html_59427348ae59f77d19bbee9cc06d1542" style="width: 100.0%; height: 100.0%;">Shout details:   Male with ankle injury</div>`)[0];
+                popup_dc9f13903f28fc367ddb806f4552c33e.setContent(html_59427348ae59f77d19bbee9cc06d1542);
+            
+        
+
+        marker_16d5a88dafb21bf5f5dea7633a6d3f20.bindPopup(popup_dc9f13903f28fc367ddb806f4552c33e)
+        ;
+
+        
+    
+    
+            marker_16d5a88dafb21bf5f5dea7633a6d3f20.bindTooltip(
+                `<div>
+                     10/07/2022
+ Crew on board: TR, EM, JT
+ Crew on shore: nan
+ Shout tags: Medical,Assistance
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bfdc682900b9700eb80180458e57238 = L.marker(
+                [56.10297731643803, -4.637896988771806],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_c6caed5af7e965d714251897a6a2422a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9bfdc682900b9700eb80180458e57238.setIcon(icon_c6caed5af7e965d714251897a6a2422a);
+        
+    
+        var popup_5f7677dbe3d5c3ec736011d7afe9a9cc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8742941fe5dfcad30e2584f498601a4c = $(`<div id="html_8742941fe5dfcad30e2584f498601a4c" style="width: 100.0%; height: 100.0%;">Shout details:   male with baby onboard bROken down on boat, search carried out noo boat found</div>`)[0];
+                popup_5f7677dbe3d5c3ec736011d7afe9a9cc.setContent(html_8742941fe5dfcad30e2584f498601a4c);
+            
+        
+
+        marker_9bfdc682900b9700eb80180458e57238.bindPopup(popup_5f7677dbe3d5c3ec736011d7afe9a9cc)
+        ;
+
+        
+    
+    
+            marker_9bfdc682900b9700eb80180458e57238.bindTooltip(
+                `<div>
+                     09/07/2022
+ Crew on board: TR ,AM ,DO ,EM ,ABJ, PD
+ Crew on shore: nan
+ Shout tags: Search,Mechanical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59676f84d1bd4cfa10952f6a625ceedb = L.marker(
+                [56.10635230731695, -4.606589396511974],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_d25f61f6f51b0657a813b56cc59b20b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_59676f84d1bd4cfa10952f6a625ceedb.setIcon(icon_d25f61f6f51b0657a813b56cc59b20b5);
+        
+    
+        var popup_947082e9ebdd3850922ec4c0ebc6d8d0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c0cc68363c7f4eacac205c66773f7929 = $(`<div id="html_c0cc68363c7f4eacac205c66773f7929" style="width: 100.0%; height: 100.0%;">Shout details:   two females on kayak struggling to get back to luss</div>`)[0];
+                popup_947082e9ebdd3850922ec4c0ebc6d8d0.setContent(html_c0cc68363c7f4eacac205c66773f7929);
+            
+        
+
+        marker_59676f84d1bd4cfa10952f6a625ceedb.bindPopup(popup_947082e9ebdd3850922ec4c0ebc6d8d0)
+        ;
+
+        
+    
+    
+            marker_59676f84d1bd4cfa10952f6a625ceedb.bindTooltip(
+                `<div>
+                     09/07/2022
+ Crew on board: TR, DO ,EM ,AM ,ABJ, AB
+ Crew on shore: nan
+ Shout tags: Assistance
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2589627bb3bfedb11f14e0c97ebebdd8 = L.marker(
+                [56.2993669719612, -4.701335813383964],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_bde9fce9a19481f3e79db8bec97c2504 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2589627bb3bfedb11f14e0c97ebebdd8.setIcon(icon_bde9fce9a19481f3e79db8bec97c2504);
+        
+    
+        var popup_eb837f0d457ca160c0c5bb4f87d1d98a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e377cbae02a7089d3535057d817a17b6 = $(`<div id="html_e377cbae02a7089d3535057d817a17b6" style="width: 100.0%; height: 100.0%;">Shout details:   Female falled and sustained injury to left eye</div>`)[0];
+                popup_eb837f0d457ca160c0c5bb4f87d1d98a.setContent(html_e377cbae02a7089d3535057d817a17b6);
+            
+        
+
+        marker_2589627bb3bfedb11f14e0c97ebebdd8.bindPopup(popup_eb837f0d457ca160c0c5bb4f87d1d98a)
+        ;
+
+        
+    
+    
+            marker_2589627bb3bfedb11f14e0c97ebebdd8.bindTooltip(
+                `<div>
+                     06/07/2022
+ Crew on board: TR IG ,FR ,PD ,EM ,DO ,AM
+ Crew on shore: nan
+ Shout tags: Medical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55cdf0e333e0be5268c9b25a5a0be55e = L.marker(
+                [56.10635230731695, -4.606589396511974],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_9b875e61b71c67c4cd7f6dc1292e5a9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_55cdf0e333e0be5268c9b25a5a0be55e.setIcon(icon_9b875e61b71c67c4cd7f6dc1292e5a9a);
+        
+    
+        var popup_cffd9d70393579447a217befe6fc2be8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f3267345379237990ea67dd4a3ecddf4 = $(`<div id="html_f3267345379237990ea67dd4a3ecddf4" style="width: 100.0%; height: 100.0%;">Shout details:   4 persons and 1 dog on kayaks cant getback to luss dueto winds</div>`)[0];
+                popup_cffd9d70393579447a217befe6fc2be8.setContent(html_f3267345379237990ea67dd4a3ecddf4);
+            
+        
+
+        marker_55cdf0e333e0be5268c9b25a5a0be55e.bindPopup(popup_cffd9d70393579447a217befe6fc2be8)
+        ;
+
+        
+    
+    
+            marker_55cdf0e333e0be5268c9b25a5a0be55e.bindTooltip(
+                `<div>
+                     06/07/2022
+ Crew on board: AM, AB ,GH ,TR, EM
+ Crew on shore: nan
+ Shout tags: Environmental,Assistance
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c6ff890d6cb71e16936ba01c7d9a538 = L.marker(
+                [56.08575328078268, -4.624216507559344],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_030299c085ed7277516ab43ec1979584 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1c6ff890d6cb71e16936ba01c7d9a538.setIcon(icon_030299c085ed7277516ab43ec1979584);
+        
+    
+        var popup_91f5b1a2d302a8f68be5b735756184d3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8d524731bfe9bd11e1491b812df7ad59 = $(`<div id="html_8d524731bfe9bd11e1491b812df7ad59" style="width: 100.0%; height: 100.0%;">Shout details:   2 persons on unsuitable water craft trying to get back to aldoclay when it sunk and they swam to shore</div>`)[0];
+                popup_91f5b1a2d302a8f68be5b735756184d3.setContent(html_8d524731bfe9bd11e1491b812df7ad59);
+            
+        
+
+        marker_1c6ff890d6cb71e16936ba01c7d9a538.bindPopup(popup_91f5b1a2d302a8f68be5b735756184d3)
+        ;
+
+        
+    
+    
+            marker_1c6ff890d6cb71e16936ba01c7d9a538.bindTooltip(
+                `<div>
+                     04/07/2022
+ Crew on board: RB,GH ,DON ,JT
+ Crew on shore: nan
+ Shout tags: Assistance,Rescue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99a4c1e94137c3ffab9395d79fe15d0f = L.marker(
+                [56.05088096606834, -4.603218646384661],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_2fcace0b8f9287533c92fbcaf399e86a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_99a4c1e94137c3ffab9395d79fe15d0f.setIcon(icon_2fcace0b8f9287533c92fbcaf399e86a);
+        
+    
+        var popup_16ec8e83ffd34df27aa54bee5f6a1563 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_09c64651e7e7c328279a863560536e1c = $(`<div id="html_09c64651e7e7c328279a863560536e1c" style="width: 100.0%; height: 100.0%;">Shout details:   boat missing when woke up fROm camping, boat was only20 mtrs ROund point</div>`)[0];
+                popup_16ec8e83ffd34df27aa54bee5f6a1563.setContent(html_09c64651e7e7c328279a863560536e1c);
+            
+        
+
+        marker_99a4c1e94137c3ffab9395d79fe15d0f.bindPopup(popup_16ec8e83ffd34df27aa54bee5f6a1563)
+        ;
+
+        
+    
+    
+            marker_99a4c1e94137c3ffab9395d79fe15d0f.bindTooltip(
+                `<div>
+                     04/07/2022
+ Crew on board: RB,GH ,DON 
+ Crew on shore: nan
+ Shout tags: Assistance
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4988a31bc283c8462f50c1e7921b21e = L.marker(
+                [56.086495558686266, -4.626662682101626],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_b29f62d911adb94140884377a528399a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e4988a31bc283c8462f50c1e7921b21e.setIcon(icon_b29f62d911adb94140884377a528399a);
+        
+    
+        var popup_055fcf0988fbcc3622817bd6727f94a9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1d6b354144123e97d25f6b11595e0af0 = $(`<div id="html_1d6b354144123e97d25f6b11595e0af0" style="width: 100.0%; height: 100.0%;">Shout details:   Paged by police Scotland to assist 2 kayakers in difficulty due to the wind conditions. Stood down prior to arrival as NPA patROl boat rendered assistance to kayakers.</div>`)[0];
+                popup_055fcf0988fbcc3622817bd6727f94a9.setContent(html_1d6b354144123e97d25f6b11595e0af0);
+            
+        
+
+        marker_e4988a31bc283c8462f50c1e7921b21e.bindPopup(popup_055fcf0988fbcc3622817bd6727f94a9)
+        ;
+
+        
+    
+    
+            marker_e4988a31bc283c8462f50c1e7921b21e.bindTooltip(
+                `<div>
+                     25/06/2022
+ Crew on board: ABJ ,TR ,GH ,EM ,JT
+ Crew on shore: nan
+ Shout tags: Environmental,Assistance
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c35793b83583fbc9acdd3064711d5ee1 = L.marker(
+                [56.05725118371005, -4.551687670736802],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_5b33c21cd70af303653bc3ae2b90b358 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c35793b83583fbc9acdd3064711d5ee1.setIcon(icon_5b33c21cd70af303653bc3ae2b90b358);
+        
+    
+        var popup_947164609dfdaab4de5a7f51969bc2a9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_39c941646389ff5cd7d15f17021b7841 = $(`<div id="html_39c941646389ff5cd7d15f17021b7841" style="width: 100.0%; height: 100.0%;">Shout details:   15ft speedboat lost pROpulsion</div>`)[0];
+                popup_947164609dfdaab4de5a7f51969bc2a9.setContent(html_39c941646389ff5cd7d15f17021b7841);
+            
+        
+
+        marker_c35793b83583fbc9acdd3064711d5ee1.bindPopup(popup_947164609dfdaab4de5a7f51969bc2a9)
+        ;
+
+        
+    
+    
+            marker_c35793b83583fbc9acdd3064711d5ee1.bindTooltip(
+                `<div>
+                     14/06/2022
+ Crew on board: ABJ, JT, DON, RB
+ Crew on shore: ABJ
+ Shout tags: Mechanical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58068d0ff148574150c16addde7d43af = L.marker(
+                [56.1064911877108, -4.637130072210182],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_e964d2a45e40d333f728d41cd1d3785b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_58068d0ff148574150c16addde7d43af.setIcon(icon_e964d2a45e40d333f728d41cd1d3785b);
+        
+    
+        var popup_bb6671cc0a182e0b903e9a624960f230 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3e8e043aa3afe79d5bf6d6a12c6a2a11 = $(`<div id="html_3e8e043aa3afe79d5bf6d6a12c6a2a11" style="width: 100.0%; height: 100.0%;">Shout details:   Reports of 1 person on a small dingy being blown out fROm shore. LLRB launched and made the short journey to the scene where no dingy or person in tROuble could be found. The rescue boat searched the surROunding area and again found nothing. An update fROm Police Scotland confirmed that there wasn't any dingy or person in tROuble but it was infact a jetski that had since left the scene. LLRB stood down.</div>`)[0];
+                popup_bb6671cc0a182e0b903e9a624960f230.setContent(html_3e8e043aa3afe79d5bf6d6a12c6a2a11);
+            
+        
+
+        marker_58068d0ff148574150c16addde7d43af.bindPopup(popup_bb6671cc0a182e0b903e9a624960f230)
+        ;
+
+        
+    
+    
+            marker_58068d0ff148574150c16addde7d43af.bindTooltip(
+                `<div>
+                     05/06/2022
+ Crew on board: TR, AM, GH
+ Crew on shore: RB, IG
+ Shout tags: Search,Enviromental
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_138ddb3ff18dc141f27204a039f0d836 = L.marker(
+                [56.10738136412435, -4.605473597597951],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_ca68a5f28f50bb70371ce744bd97d96b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_138ddb3ff18dc141f27204a039f0d836.setIcon(icon_ca68a5f28f50bb70371ce744bd97d96b);
+        
+    
+        var popup_dac1ff22a7317c1710219d275789917b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_645fe2b601e701b80fff472e07aec877 = $(`<div id="html_645fe2b601e701b80fff472e07aec877" style="width: 100.0%; height: 100.0%;">Shout details:   Bayliner bow rider with 6 adults 2 kids and a dog, fuel pump failure. Towed to DMMS at balloch</div>`)[0];
+                popup_dac1ff22a7317c1710219d275789917b.setContent(html_645fe2b601e701b80fff472e07aec877);
+            
+        
+
+        marker_138ddb3ff18dc141f27204a039f0d836.bindPopup(popup_dac1ff22a7317c1710219d275789917b)
+        ;
+
+        
+    
+    
+            marker_138ddb3ff18dc141f27204a039f0d836.bindTooltip(
+                `<div>
+                     05/06/2022
+ Crew on board: RB,IG,TR,GH,DON
+ Crew on shore: nan
+ Shout tags: Mechanical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e651fddfa8c7ebd47abf21c40dc8f01 = L.marker(
+                [56.10297731643803, -4.637896988771806],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_754382c0e3314eb613ecba0cb01973de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_1e651fddfa8c7ebd47abf21c40dc8f01.setIcon(icon_754382c0e3314eb613ecba0cb01973de);
+        
+    
+        var popup_6961594f4e6a8b10a0accc85a30e8e10 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ed4608a6179c72a5c59c8f0fed2ff62f = $(`<div id="html_ed4608a6179c72a5c59c8f0fed2ff62f" style="width: 100.0%; height: 100.0%;">Shout details:   Assorted boat with engine tROuble to luss pier</div>`)[0];
+                popup_6961594f4e6a8b10a0accc85a30e8e10.setContent(html_ed4608a6179c72a5c59c8f0fed2ff62f);
+            
+        
+
+        marker_1e651fddfa8c7ebd47abf21c40dc8f01.bindPopup(popup_6961594f4e6a8b10a0accc85a30e8e10)
+        ;
+
+        
+    
+    
+            marker_1e651fddfa8c7ebd47abf21c40dc8f01.bindTooltip(
+                `<div>
+                     05/06/2022
+ Crew on board: RB, IG, GH,TR, DON
+ Crew on shore: nan
+ Shout tags: Mechanical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21c94b86d40b8f02be22f3785c23ba58 = L.marker(
+                [56.10738136412435, -4.605473597597951],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_fb5f3633b3c66381a2b4ad393f54d95a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_21c94b86d40b8f02be22f3785c23ba58.setIcon(icon_fb5f3633b3c66381a2b4ad393f54d95a);
+        
+    
+        var popup_d5e8a7cbb6195e94e1878a41d04c1f8f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a5ff6819152f4d24ee10f70fbf47735e = $(`<div id="html_a5ff6819152f4d24ee10f70fbf47735e" style="width: 100.0%; height: 100.0%;">Shout details:   Seadoo jetski with tow ROpe stuck in impeller, crew removed tow ROpe and took passengers to luss</div>`)[0];
+                popup_d5e8a7cbb6195e94e1878a41d04c1f8f.setContent(html_a5ff6819152f4d24ee10f70fbf47735e);
+            
+        
+
+        marker_21c94b86d40b8f02be22f3785c23ba58.bindPopup(popup_d5e8a7cbb6195e94e1878a41d04c1f8f)
+        ;
+
+        
+    
+    
+            marker_21c94b86d40b8f02be22f3785c23ba58.bindTooltip(
+                `<div>
+                     05/06/2022
+ Crew on board: RB, IG, GH, TR, DON
+ Crew on shore: nan
+ Shout tags: Mechanical,Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b638d6d30f4968cb052522f5839b569c = L.marker(
+                [56.27776374678452, -4.696937813171928],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_e2bca26170e5f640544a9c63dc200a75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_b638d6d30f4968cb052522f5839b569c.setIcon(icon_e2bca26170e5f640544a9c63dc200a75);
+        
+    
+        var popup_4b167a52f067cf840a65eddd91a4e0a1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cc2683440f0770b1cbcf81497e4d937d = $(`<div id="html_cc2683440f0770b1cbcf81497e4d937d" style="width: 100.0%; height: 100.0%;">Shout details:   Injured runner on WHW Ankle and hip injury, walking wounded no SAS assistance required, taken to ROwerdenNone to meet wife</div>`)[0];
+                popup_4b167a52f067cf840a65eddd91a4e0a1.setContent(html_cc2683440f0770b1cbcf81497e4d937d);
+            
+        
+
+        marker_b638d6d30f4968cb052522f5839b569c.bindPopup(popup_4b167a52f067cf840a65eddd91a4e0a1)
+        ;
+
+        
+    
+    
+            marker_b638d6d30f4968cb052522f5839b569c.bindTooltip(
+                `<div>
+                     04/06/2022
+ Crew on board: RB, IG, GH, ABJ
+ Crew on shore: GD, CG
+ Shout tags: Medical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f78355a5ac08848532f27d18275b5f6f = L.marker(
+                [56.08995118730318, -4.617059973069642],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_a1cc970821f3915983809b0bc23bbcb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f78355a5ac08848532f27d18275b5f6f.setIcon(icon_a1cc970821f3915983809b0bc23bbcb4);
+        
+    
+        var popup_afc3c7cdb487805c3bf7a06e103027a7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_88be1babd06c052007c34648862d72e0 = $(`<div id="html_88be1babd06c052007c34648862d72e0" style="width: 100.0%; height: 100.0%;">Shout details:   Assist fire service to InchConnachan boat house</div>`)[0];
+                popup_afc3c7cdb487805c3bf7a06e103027a7.setContent(html_88be1babd06c052007c34648862d72e0);
+            
+        
+
+        marker_f78355a5ac08848532f27d18275b5f6f.bindPopup(popup_afc3c7cdb487805c3bf7a06e103027a7)
+        ;
+
+        
+    
+    
+            marker_f78355a5ac08848532f27d18275b5f6f.bindTooltip(
+                `<div>
+                     28/05/2022
+ Crew on board: RB, JT
+ Crew on shore: nan
+ Shout tags: Assistance
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c237942275f3a26e8e86155376123f34 = L.marker(
+                [56.2475881893975, -4.688138697853918],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_fd5358cc90a9bba4ef7968fe154d63b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c237942275f3a26e8e86155376123f34.setIcon(icon_fd5358cc90a9bba4ef7968fe154d63b2);
+        
+    
+        var popup_066e627376c48dfe9e54455a8300e50a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fd647945dc0e9530ada22c971eec7c24 = $(`<div id="html_fd647945dc0e9530ada22c971eec7c24" style="width: 100.0%; height: 100.0%;">Shout details:   62YO female suffering back pain after multiple falls on Conic Hill two days earlier. She was walking WHW with her husband, and a third party came acROss them when she was uNoneble to walk due to pain. Lomond MRT initiAM tasked and passed incident to LLRB, we attended and after searching located the couple. Medical care given on scene, and couple transported to Inversnaid hotel where they passed over to Scottish Ambulance Service.</div>`)[0];
+                popup_066e627376c48dfe9e54455a8300e50a.setContent(html_fd647945dc0e9530ada22c971eec7c24);
+            
+        
+
+        marker_c237942275f3a26e8e86155376123f34.bindPopup(popup_066e627376c48dfe9e54455a8300e50a)
+        ;
+
+        
+    
+    
+            marker_c237942275f3a26e8e86155376123f34.bindTooltip(
+                `<div>
+                     20/05/2022
+ Crew on board: RO, AM, PBT, KM, JT
+ Crew on shore: nan
+ Shout tags: Medical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82ceef5a5359d5b0a7e0124eeec29ff4 = L.marker(
+                [56.23960762859186, -4.684713932170649],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_4d2b9aab952e635926bb15494f9e80c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_82ceef5a5359d5b0a7e0124eeec29ff4.setIcon(icon_4d2b9aab952e635926bb15494f9e80c8);
+        
+    
+        var popup_9b817a2f4e75664bb55582ca483e055c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_58627afd4aa0cc9ba6b68b84660ea140 = $(`<div id="html_58627afd4aa0cc9ba6b68b84660ea140" style="width: 100.0%; height: 100.0%;">Shout details:   Assistance required for a hillwalker who had fallen ill whilst walking the West Highland Way. Location was given using what 3 words app as near to ROb ROy's Cave. Crew located the walking party and assisted the unwell person down the hill to the boat and onwards to a waiting Ambulance at TaRBet.</div>`)[0];
+                popup_9b817a2f4e75664bb55582ca483e055c.setContent(html_58627afd4aa0cc9ba6b68b84660ea140);
+            
+        
+
+        marker_82ceef5a5359d5b0a7e0124eeec29ff4.bindPopup(popup_9b817a2f4e75664bb55582ca483e055c)
+        ;
+
+        
+    
+    
+            marker_82ceef5a5359d5b0a7e0124eeec29ff4.bindTooltip(
+                `<div>
+                     17/05/2022
+ Crew on board: RO,CG,EM,PBT,KM,JT
+ Crew on shore: nan
+ Shout tags: Medical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e50fbd77d0ff481972779fe49e095348 = L.marker(
+                [56.05508785856868, -4.533460622593705],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_6ab4f8625158d1ea3ff9701b0d428c86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e50fbd77d0ff481972779fe49e095348.setIcon(icon_6ab4f8625158d1ea3ff9701b0d428c86);
+        
+    
+        var popup_0ac741dec18cdddc4daf7df2cf8d8a5b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2270c0819c6bdf83e2727282d58fd153 = $(`<div id="html_2270c0819c6bdf83e2727282d58fd153" style="width: 100.0%; height: 100.0%;">Shout details:   Report of upturned inflatable canoe in the water. LLRB and NP Rangers responded. Upon inspection canoe suspected to belong to person's rescued fROm water few days earlier by NP Rangers. Contact made with them, and their description of the canoe matched. Rangers took canoe back to DMS for collection by the owners, all stood down.</div>`)[0];
+                popup_0ac741dec18cdddc4daf7df2cf8d8a5b.setContent(html_2270c0819c6bdf83e2727282d58fd153);
+            
+        
+
+        marker_e50fbd77d0ff481972779fe49e095348.bindPopup(popup_0ac741dec18cdddc4daf7df2cf8d8a5b)
+        ;
+
+        
+    
+    
+            marker_e50fbd77d0ff481972779fe49e095348.bindTooltip(
+                `<div>
+                     16/05/2022
+ Crew on board: ABS, PBT, JT, KM
+ Crew on shore: nan
+ Shout tags: Rescue,Transport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7dda7d55e7ddc039d275eaeaeaf5b288 = L.marker(
+                [56.0827281246468, -4.608704286464475],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_18bc7cd3131214866ef4ca7814962356 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7dda7d55e7ddc039d275eaeaeaf5b288.setIcon(icon_18bc7cd3131214866ef4ca7814962356);
+        
+    
+        var popup_a2d3ebc2160701d92ec6fee39c958014 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a29ed45ba42008bf463a759e409569ac = $(`<div id="html_a29ed45ba42008bf463a759e409569ac" style="width: 100.0%; height: 100.0%;">Shout details:   Blue and White Bayliner run ashore on remains of old walkway between Inchmoan and Inch Galbraith. Boat was pushed then towed off into deep safe waters, where they were able to restart their engine and continue on their way</div>`)[0];
+                popup_a2d3ebc2160701d92ec6fee39c958014.setContent(html_a29ed45ba42008bf463a759e409569ac);
+            
+        
+
+        marker_7dda7d55e7ddc039d275eaeaeaf5b288.bindPopup(popup_a2d3ebc2160701d92ec6fee39c958014)
+        ;
+
+        
+    
+    
+            marker_7dda7d55e7ddc039d275eaeaeaf5b288.bindTooltip(
+                `<div>
+                     10/05/2022
+ Crew on board: RB, AM, PBT, AJM, JT
+ Crew on shore: nan
+ Shout tags: Assistance
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cbc65da5e8b60f302bb0fbfd8de98db8 = L.marker(
+                [56.04477897807447, -4.575224862517516],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_8b1396708a78afea36c2a6904ca7dc2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_cbc65da5e8b60f302bb0fbfd8de98db8.setIcon(icon_8b1396708a78afea36c2a6904ca7dc2f);
+        
+    
+        var popup_538a02259eb3076bc9eea5856cf23ac6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_073c84c676bd1cd0a09548a0ef232e0c = $(`<div id="html_073c84c676bd1cd0a09548a0ef232e0c" style="width: 100.0%; height: 100.0%;">Shout details:   Wooden fishing dinghy suffered engine failure, prevailing westerly winds and waves had pushed them into shoreline. LLRB responded and towed them back to Duncun Mills Slipway, where with assistance fROm fellow fishermen they made their own way back down the river Leven to their berth.</div>`)[0];
+                popup_538a02259eb3076bc9eea5856cf23ac6.setContent(html_073c84c676bd1cd0a09548a0ef232e0c);
+            
+        
+
+        marker_cbc65da5e8b60f302bb0fbfd8de98db8.bindPopup(popup_538a02259eb3076bc9eea5856cf23ac6)
+        ;
+
+        
+    
+    
+            marker_cbc65da5e8b60f302bb0fbfd8de98db8.bindTooltip(
+                `<div>
+                     10/05/2022
+ Crew on board: RB, AM, PBT, AJM, JT
+ Crew on shore: nan
+ Shout tags: Mechanical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7cee063799f7b038d17d220d3c557e6 = L.marker(
+                [56.07595814561354, -4.563067545989966],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_df086ee33a1619278f1cfd8f70c1eb69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b7cee063799f7b038d17d220d3c557e6.setIcon(icon_df086ee33a1619278f1cfd8f70c1eb69);
+        
+    
+        var popup_544b24285ca8b9e9dc8711bc36df9a67 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ac88d5027185d5239aa8360bdb7e75d4 = $(`<div id="html_ac88d5027185d5239aa8360bdb7e75d4" style="width: 100.0%; height: 100.0%;">Shout details:   Fishing boat with 3 occupants capsized. 3 persons in water, 4 kayakers were on scene pROviding assistance. 3 person's not wearing lifejackets. Shout attended by LLRB and NonetioNonel Park "Osprey". LLRB recovered three casualties and took them to Duncan Mills slipway where they were met by ambulance crews. Casualties assessed and warmed up in ambulance. NP towed capsized boat back to MilarROchy Bay, LLRB then returned to MilarROchy in order to assist in righting the boat and dragging it onto shoreline. Fuel removed fROm boat.</div>`)[0];
+                popup_544b24285ca8b9e9dc8711bc36df9a67.setContent(html_ac88d5027185d5239aa8360bdb7e75d4);
+            
+        
+
+        marker_b7cee063799f7b038d17d220d3c557e6.bindPopup(popup_544b24285ca8b9e9dc8711bc36df9a67)
+        ;
+
+        
+    
+    
+            marker_b7cee063799f7b038d17d220d3c557e6.bindTooltip(
+                `<div>
+                     01/05/2022
+ Crew on board: ABJ, ABS, AM, PBT, GH , DON, JT
+ Crew on shore: TR
+ Shout tags: Rescue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_115c423cd7d755d6cb715e5bb0b14405 = L.marker(
+                [56.01681400723627, -4.611093212845342],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_bad41b5a2b30ac38599e362c3e1323db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_115c423cd7d755d6cb715e5bb0b14405.setIcon(icon_bad41b5a2b30ac38599e362c3e1323db);
+        
+    
+        var popup_a235c12373de5833e6541118993f7fb0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_131a008c0107fdd8e1796e0e0bcec6c0 = $(`<div id="html_131a008c0107fdd8e1796e0e0bcec6c0" style="width: 100.0%; height: 100.0%;">Shout details:   Reports of two in water, on arrival a sailing dinghy was being assured by NPA boat , this was the reporter of incident. They said they had made shore at. North side of duckbay marina at small beach. SFRS Police scotland SAS and coastguard already on scene. No sign of casualty’s that we’re in water.</div>`)[0];
+                popup_a235c12373de5833e6541118993f7fb0.setContent(html_131a008c0107fdd8e1796e0e0bcec6c0);
+            
+        
+
+        marker_115c423cd7d755d6cb715e5bb0b14405.bindPopup(popup_a235c12373de5833e6541118993f7fb0)
+        ;
+
+        
+    
+    
+            marker_115c423cd7d755d6cb715e5bb0b14405.bindTooltip(
+                `<div>
+                     24/04/2022
+ Crew on board: RB, RO, AJM , PBT, JT
+ Crew on shore: GH
+ Shout tags: Search,Rescue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9b419d009eb5ac34671f30aa6e118b5 = L.marker(
+                [56.10735743288316, -4.607340415011798],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_888d7fa3aa3089c5630ed715c17fbd6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b9b419d009eb5ac34671f30aa6e118b5.setIcon(icon_888d7fa3aa3089c5630ed715c17fbd6a);
+        
+    
+        var popup_433754ded1c87045dd96652e73a95372 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2bd96a2993b47a6e0712ab6b5133a7a1 = $(`<div id="html_2bd96a2993b47a6e0712ab6b5133a7a1" style="width: 100.0%; height: 100.0%;">Shout details:   4 lads on Jetskis had been out for the afternoon when one jetski started taking on water. 1 lad returned to Luss and raised the alarm. LLRB attended and headed to LoNoneig, where the remaining three lads were waiting. Location was easy as they had lit a fire to keep warm, questioning found that they had been stranded for several hours before the alarm was given. All three lads and their jetski recovered to Luss where they were met by the fourth friend.</div>`)[0];
+                popup_433754ded1c87045dd96652e73a95372.setContent(html_2bd96a2993b47a6e0712ab6b5133a7a1);
+            
+        
+
+        marker_b9b419d009eb5ac34671f30aa6e118b5.bindPopup(popup_433754ded1c87045dd96652e73a95372)
+        ;
+
+        
+    
+    
+            marker_b9b419d009eb5ac34671f30aa6e118b5.bindTooltip(
+                `<div>
+                     22/04/2022
+ Crew on board: DS, PBT, GERALD , JT
+ Crew on shore: nan
+ Shout tags: Mechanical,Rescue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32697de18d7b64ecf207b92bd9ff8866 = L.marker(
+                [56.006626579770206, -4.592068482384204],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_2d4c297412ca1c7b080f5d381626e24f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_32697de18d7b64ecf207b92bd9ff8866.setIcon(icon_2d4c297412ca1c7b080f5d381626e24f);
+        
+    
+        var popup_a046b6a908abf242263ccff145289f95 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4404f8eaaa9c4bf7b08468b99986eb86 = $(`<div id="html_4404f8eaaa9c4bf7b08468b99986eb86" style="width: 100.0%; height: 100.0%;">Shout details:   Family of 4 (2 adults and 2 children) on two paddle boards reported to be in difficulty due to wind, call came fROm shore sighting.
+ Boat responded and carried out search, however police updated that family had made it to shore safely.</div>`)[0];
+                popup_a046b6a908abf242263ccff145289f95.setContent(html_4404f8eaaa9c4bf7b08468b99986eb86);
+            
+        
+
+        marker_32697de18d7b64ecf207b92bd9ff8866.bindPopup(popup_a046b6a908abf242263ccff145289f95)
+        ;
+
+        
+    
+    
+            marker_32697de18d7b64ecf207b92bd9ff8866.bindTooltip(
+                `<div>
+                     21/04/2022
+ Crew on board: RB, AM, PBT, KM
+ Crew on shore: nan
+ Shout tags: Enviromental,Search
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ceec80db9e08f80f5333bea4f65cb20e = L.marker(
+                [56.05088096606834, -4.603218646384661],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_e565da401fe493e6028106e2ac6d17bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ceec80db9e08f80f5333bea4f65cb20e.setIcon(icon_e565da401fe493e6028106e2ac6d17bc);
+        
+    
+        var popup_20be10875964ba4ecac3774755045a8a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_390ff75eca0f4e0bf25975676626a422 = $(`<div id="html_390ff75eca0f4e0bf25975676626a422" style="width: 100.0%; height: 100.0%;">Shout details:   Report of a bROken down vessel Northwest of InchMurrin Island with 4 persons onboard, LLRB arrived quickly to the scene and assessed all onboard and began to make preparations to tow to Duncan Mills Memorial Slipway. Once the vessel was secured LLRB returned to station and stood down.</div>`)[0];
+                popup_20be10875964ba4ecac3774755045a8a.setContent(html_390ff75eca0f4e0bf25975676626a422);
+            
+        
+
+        marker_ceec80db9e08f80f5333bea4f65cb20e.bindPopup(popup_20be10875964ba4ecac3774755045a8a)
+        ;
+
+        
+    
+    
+            marker_ceec80db9e08f80f5333bea4f65cb20e.bindTooltip(
+                `<div>
+                     02/04/2022
+ Crew on board: TR, AM,AJM
+ Crew on shore: nan
+ Shout tags: Mechanical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c35bf2a814c039e47fd5424d7f78cea7 = L.marker(
+                [56.00550961369429, -4.583046139893509],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_65df0a890aeab8dffce699ed1b93fb7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_c35bf2a814c039e47fd5424d7f78cea7.setIcon(icon_65df0a890aeab8dffce699ed1b93fb7f);
+        
+    
+        var popup_2d31808ac4f1c4d810d2e6f4c7f423bf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9ac11ace37ff81bdc9a98cecca400977 = $(`<div id="html_9ac11ace37ff81bdc9a98cecca400977" style="width: 100.0%; height: 100.0%;">Shout details:   As we were leaving river after last incident, noticed a boat cutting close inshore ROund the Maid of the Loch Pier. After observing them come to a halt, we checked and found boat's engine had died. We then assisted them down to Riverside pontoons by weir.</div>`)[0];
+                popup_2d31808ac4f1c4d810d2e6f4c7f423bf.setContent(html_9ac11ace37ff81bdc9a98cecca400977);
+            
+        
+
+        marker_c35bf2a814c039e47fd5424d7f78cea7.bindPopup(popup_2d31808ac4f1c4d810d2e6f4c7f423bf)
+        ;
+
+        
+    
+    
+            marker_c35bf2a814c039e47fd5424d7f78cea7.bindTooltip(
+                `<div>
+                     27/03/2022
+ Crew on board: TR, PBT, IG
+ Crew on shore: nan
+ Shout tags: Mechanical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_793816d16699c7017996ae692df9cf8f = L.marker(
+                [56.08995118730318, -4.617059973069642],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_4146ed77c0bf23eaeb0b4ee5bd0ca711 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_793816d16699c7017996ae692df9cf8f.setIcon(icon_4146ed77c0bf23eaeb0b4ee5bd0ca711);
+        
+    
+        var popup_038346b58746159cb41701581cc041ea = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_46ef00cac7a8858fc92522e692b6a93f = $(`<div id="html_46ef00cac7a8858fc92522e692b6a93f" style="width: 100.0%; height: 100.0%;">Shout details:   3 lads out on jetski for the day, when ski lost all oil pressure. Recovered ski to Balloch Park public slip.</div>`)[0];
+                popup_038346b58746159cb41701581cc041ea.setContent(html_46ef00cac7a8858fc92522e692b6a93f);
+            
+        
+
+        marker_793816d16699c7017996ae692df9cf8f.bindPopup(popup_038346b58746159cb41701581cc041ea)
+        ;
+
+        
+    
+    
+            marker_793816d16699c7017996ae692df9cf8f.bindTooltip(
+                `<div>
+                     27/03/2022
+ Crew on board: TR, PBT, IG
+ Crew on shore: nan
+ Shout tags: Mechanical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db2c92b05af43325ca03f1a21f9bc949 = L.marker(
+                [56.08995118730318, -4.617059973069642],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_383947c59fbe7506f89ba4e4ec21914d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_db2c92b05af43325ca03f1a21f9bc949.setIcon(icon_383947c59fbe7506f89ba4e4ec21914d);
+        
+    
+        var popup_bcd7086178f11e340b9a167dd33dd6f9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6a7329ca199abb71b670ad9b70aa31af = $(`<div id="html_6a7329ca199abb71b670ad9b70aa31af" style="width: 100.0%; height: 100.0%;">Shout details:   Report fROm HM Coastguard of 1 x female reporting her inflatable kayak had deflated and was uNoneble to return to the mainland fROm the Northern shore of InchConnachan. LLRB quickly arrived on scene and assessed the situation, identifying 1 female and 1 male, both were well prepared and in a healthy condition. Once safely onboard the crew then took them  to Aldochlay fROm where they set off. Crew then returned to base and stood down.</div>`)[0];
+                popup_bcd7086178f11e340b9a167dd33dd6f9.setContent(html_6a7329ca199abb71b670ad9b70aa31af);
+            
+        
+
+        marker_db2c92b05af43325ca03f1a21f9bc949.bindPopup(popup_bcd7086178f11e340b9a167dd33dd6f9)
+        ;
+
+        
+    
+    
+            marker_db2c92b05af43325ca03f1a21f9bc949.bindTooltip(
+                `<div>
+                     26/03/2022
+ Crew on board: AM, PBT, GH, AJM
+ Crew on shore: nan
+ Shout tags: Mechanical,Rescue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c5fff277262dec4655c7c6b7d1008cf = L.marker(
+                [56.01259466002678, -4.589535332254012],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_86191d71d5b1fbcfa8e4831cd5750301 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9c5fff277262dec4655c7c6b7d1008cf.setIcon(icon_86191d71d5b1fbcfa8e4831cd5750301);
+        
+    
+        var popup_ba9ffe09fed0374493478a78683cfbd5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8bfa9d201f2fedb88b9652aa20bf6843 = $(`<div id="html_8bfa9d201f2fedb88b9652aa20bf6843" style="width: 100.0%; height: 100.0%;">Shout details:   2 persons in the water after their 
+ inflatable kayak malfunctioned causing both occupants to enter the water. 
+ 
+ Both casualties were recovered fROm the water at the moth of the river leven and taken to Duncan Mills Slipway for further treatment.</div>`)[0];
+                popup_ba9ffe09fed0374493478a78683cfbd5.setContent(html_8bfa9d201f2fedb88b9652aa20bf6843);
+            
+        
+
+        marker_9c5fff277262dec4655c7c6b7d1008cf.bindPopup(popup_ba9ffe09fed0374493478a78683cfbd5)
+        ;
+
+        
+    
+    
+            marker_9c5fff277262dec4655c7c6b7d1008cf.bindTooltip(
+                `<div>
+                     23/03/2022
+ Crew on board: RO, ABS, TR, GH, EM, JT
+ Crew on shore: nan
+ Shout tags: Rescue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cdbb44b55ffa2e3dc98351e94904c63c = L.marker(
+                [56.02943056135435, -4.612983086839887],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_585063939ed7ea7307575d3a4854f004 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cdbb44b55ffa2e3dc98351e94904c63c.setIcon(icon_585063939ed7ea7307575d3a4854f004);
+        
+    
+        var popup_8583f729c2b02306b2505cecd769659b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5894f7056694849a8ae413219c6b291a = $(`<div id="html_5894f7056694849a8ae413219c6b291a" style="width: 100.0%; height: 100.0%;">Shout details:   BROken down boat with 7 persons on board, towed to DMS</div>`)[0];
+                popup_8583f729c2b02306b2505cecd769659b.setContent(html_5894f7056694849a8ae413219c6b291a);
+            
+        
+
+        marker_cdbb44b55ffa2e3dc98351e94904c63c.bindPopup(popup_8583f729c2b02306b2505cecd769659b)
+        ;
+
+        
+    
+    
+            marker_cdbb44b55ffa2e3dc98351e94904c63c.bindTooltip(
+                `<div>
+                     20/03/2022
+ Crew on board: CG, ABJ, EM, JT
+ Crew on shore: nan
+ Shout tags: Mechanical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7624626f37664290431322edcd37cbd4 = L.marker(
+                [56.05088096606834, -4.603218646384661],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_44657715b48e096d6f25498580241a23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_7624626f37664290431322edcd37cbd4.setIcon(icon_44657715b48e096d6f25498580241a23);
+        
+    
+        var popup_cc4e9c6c19e33b9874f3b1ec88357cda = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6427905c7d00a0671a11b2d0bd151103 = $(`<div id="html_6427905c7d00a0671a11b2d0bd151103" style="width: 100.0%; height: 100.0%;">Shout details:   Two power boats lost power attempting to return to Duncan Mills Slipway.
+ One boat was known to be not working, and was being towed by second boat who subsequently bROke down. 
+ LLRB were passing area going to event at Lomond shores when we were waved down by first boat. 
+ Boat taken on tow to Duncan Mills slip, before LLRB returned to take second boat under tow.</div>`)[0];
+                popup_cc4e9c6c19e33b9874f3b1ec88357cda.setContent(html_6427905c7d00a0671a11b2d0bd151103);
+            
+        
+
+        marker_7624626f37664290431322edcd37cbd4.bindPopup(popup_cc4e9c6c19e33b9874f3b1ec88357cda)
+        ;
+
+        
+    
+    
+            marker_7624626f37664290431322edcd37cbd4.bindTooltip(
+                `<div>
+                     20/03/2022
+ Crew on board: AM, PBT, JT
+ Crew on shore: nan
+ Shout tags: Mechanical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6575d378021b3de3742f19d0fcf94224 = L.marker(
+                [56.10732578311022, -4.604227154483473],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_24b0adf8f409119429d151e34865afd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6575d378021b3de3742f19d0fcf94224.setIcon(icon_24b0adf8f409119429d151e34865afd7);
+        
+    
+        var popup_e2f288ed9453e135bcbcac6ca84fc82b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9b40420a097e79a9483e1960de9d8f83 = $(`<div id="html_9b40420a097e79a9483e1960de9d8f83" style="width: 100.0%; height: 100.0%;">Shout details:   Two adults and a dog in an inflatable kayak</div>`)[0];
+                popup_e2f288ed9453e135bcbcac6ca84fc82b.setContent(html_9b40420a097e79a9483e1960de9d8f83);
+            
+        
+
+        marker_6575d378021b3de3742f19d0fcf94224.bindPopup(popup_e2f288ed9453e135bcbcac6ca84fc82b)
+        ;
+
+        
+    
+    
+            marker_6575d378021b3de3742f19d0fcf94224.bindTooltip(
+                `<div>
+                     19/03/2022
+ Crew on board: RO, PBT, JT ,GH
+ Crew on shore: nan
+ Shout tags: Rescue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb03445fd174da747931a061c2267b31 = L.marker(
+                [56.13439160236831, -4.643253632892516],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_622ca26532901b92f6b2a0828c41d10c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fb03445fd174da747931a061c2267b31.setIcon(icon_622ca26532901b92f6b2a0828c41d10c);
+        
+    
+        var popup_6cae78b4ea221179c812314e2bb3e806 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a44ba8135a0dc1dcedea6951358ba7bf = $(`<div id="html_a44ba8135a0dc1dcedea6951358ba7bf" style="width: 100.0%; height: 100.0%;">Shout details:   Paged by police Scotland due to reports of a light flashing in a sequence between Luss and ROwardenNone. Crew attended the locus immediately and carried out a search of the area with negative results for any persons, flashing light deemed to be isolated danger marker</div>`)[0];
+                popup_6cae78b4ea221179c812314e2bb3e806.setContent(html_a44ba8135a0dc1dcedea6951358ba7bf);
+            
+        
+
+        marker_fb03445fd174da747931a061c2267b31.bindPopup(popup_6cae78b4ea221179c812314e2bb3e806)
+        ;
+
+        
+    
+    
+            marker_fb03445fd174da747931a061c2267b31.bindTooltip(
+                `<div>
+                     14/03/2022
+ Crew on board: ABJ, AM, PT, LS, JT
+ Crew on shore: nan
+ Shout tags: Search,FalseAlarm
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_948bfcb16fd741fca84ef04aa8025f70 = L.marker(
+                [56.08995118730318, -4.617059973069642],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_0759ae29fd53a75082863b764698fec0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_948bfcb16fd741fca84ef04aa8025f70.setIcon(icon_0759ae29fd53a75082863b764698fec0);
+        
+    
+        var popup_85c6d875f8f7fe4805e40924132f064c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1dad26ebee68200f19f8cd5b699d70ee = $(`<div id="html_1dad26ebee68200f19f8cd5b699d70ee" style="width: 100.0%; height: 100.0%;">Shout details:   24ft Norman reg v4730, engine tROuble been camping since last week, towed to DMMS</div>`)[0];
+                popup_85c6d875f8f7fe4805e40924132f064c.setContent(html_1dad26ebee68200f19f8cd5b699d70ee);
+            
+        
+
+        marker_948bfcb16fd741fca84ef04aa8025f70.bindPopup(popup_85c6d875f8f7fe4805e40924132f064c)
+        ;
+
+        
+    
+    
+            marker_948bfcb16fd741fca84ef04aa8025f70.bindTooltip(
+                `<div>
+                     21/02/2022
+ Crew on board: RB ,JT ,PBT ,AM
+ Crew on shore: TR,GH
+ Shout tags: Mechanical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f042d2fe74a545194d195f861aa6d14f = L.marker(
+                [56.20448674375026, -4.706992883671947],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_a49d0dca3febf0698f74ab24dcb36358 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f042d2fe74a545194d195f861aa6d14f.setIcon(icon_a49d0dca3febf0698f74ab24dcb36358);
+        
+    
+        var popup_de0f73890a638d32beb7050c14fb6ebf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_91082430a29d186367936772416bf054 = $(`<div id="html_91082430a29d186367936772416bf054" style="width: 100.0%; height: 100.0%;">Shout details:   Reports of vulnerable person within the vicinity of the shoreline in TaRBert area  of west coast Loch Lomond . Shore search carried out down to firkin point nothing observed, stood down and returned to base</div>`)[0];
+                popup_de0f73890a638d32beb7050c14fb6ebf.setContent(html_91082430a29d186367936772416bf054);
+            
+        
+
+        marker_f042d2fe74a545194d195f861aa6d14f.bindPopup(popup_de0f73890a638d32beb7050c14fb6ebf)
+        ;
+
+        
+    
+    
+            marker_f042d2fe74a545194d195f861aa6d14f.bindTooltip(
+                `<div>
+                     20/02/2022
+ Crew on board: RO,IG,ABJD, PBT
+ Crew on shore: RB,TR
+ Shout tags: Search,Medical
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2add8efb07a849b0a53db014475a7ade = L.marker(
+                [56.08295845991511, -4.547815977975664],
+                {}
+            ).addTo(marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5);
+        
+    
+            var icon_650f685d935124294f32ad2f02200ad3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2add8efb07a849b0a53db014475a7ade.setIcon(icon_650f685d935124294f32ad2f02200ad3);
+        
+    
+        var popup_625849445e73ab58a489ad8b4f168b9b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5f82b8b0f16521c397e6ab4fe3d177d8 = $(`<div id="html_5f82b8b0f16521c397e6ab4fe3d177d8" style="width: 100.0%; height: 100.0%;">Shout details:   Jet ski failed to return, report of persons in water. Stood down when arrived at scene, person/persons on jet ski swam to shore in water for 1hr, R199 also in attendance</div>`)[0];
+                popup_625849445e73ab58a489ad8b4f168b9b.setContent(html_5f82b8b0f16521c397e6ab4fe3d177d8);
+            
+        
+
+        marker_2add8efb07a849b0a53db014475a7ade.bindPopup(popup_625849445e73ab58a489ad8b4f168b9b)
+        ;
+
+        
+    
+    
+            marker_2add8efb07a849b0a53db014475a7ade.bindTooltip(
+                `<div>
+                     20/02/2022
+ Crew on board: ABJ, RO, TR , PBT, IG
+ Crew on shore: RB
+ Shout tags: Rescue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5.addTo(map_ecfd3033793bd80065d0ddabacb016ab);
+        
+    
+            tile_layer_1217c544f06af111a79ecba08dcf6608.addTo(map_ecfd3033793bd80065d0ddabacb016ab);
+        
+    
+            marker_cluster_612eefbb4ef4b77943016b96e2d5d7b5.addTo(map_ecfd3033793bd80065d0ddabacb016ab);
+        
+</script>
+</html>
