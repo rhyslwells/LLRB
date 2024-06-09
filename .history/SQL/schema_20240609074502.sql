@@ -104,82 +104,24 @@
 -- -- Verify the data in the Weather table
 -- SELECT * FROM Weather Limit 3;
 
--- Select sample data from all_data
--- SELECT crew_on_board, crew_on_shore FROM all_data LIMIT 3;
 
+-- -- Create the Crew table
+-- CREATE TABLE Crew (
+--     id INTEGER PRIMARY KEY,
+--     initials VARCHAR(10) NOT NULL,
+--     name VARCHAR(100) NOT NULL,
+--     role VARCHAR(50) NOT NULL
+-- );
 
+SELECT * FROM Shout Limit 3;
 
-
-
--- SELECT * FROM Shout Limit 3;
-
--- from all_data I want to rcord which crew members were on board and which were on shore
--- I will create a new table Shout_Crew to record this information
---  This table is designed to store information about crew members associated with each shout, indicating whether they were on board or on shore.
-
--- SELECT * FROM Crew;
-
-
--- Drop the Shout_Crew table if it exists
-DROP TABLE IF EXISTS Shout_Crew;
-
--- TODO FIX Shout_Crew table
-
--- Create the Shout_Crew table
-CREATE TABLE Shout_Crew (
-    id INTEGER PRIMARY KEY,
-    shout_id INTEGER NOT NULL,
-    all_data_id INTEGER NOT NULL,
-    crew_id INTEGER NOT NULL,
-    crew_initials TEXT, -- Corrected column name from crew_intials to crew_initials
-    on_board BOOLEAN NOT NULL DEFAULT 0,
-    on_shore BOOLEAN NOT NULL DEFAULT 0,
-    FOREIGN KEY (shout_id) REFERENCES Shout(id),
-    FOREIGN KEY (all_data_id) REFERENCES all_data(id),
-    FOREIGN KEY (crew_id) REFERENCES Crew(id)
-);
-
--- Insert data into the Shout_Crew table for crew members who were on board
-INSERT INTO Shout_Crew (shout_id, all_data_id, crew_id, crew_initials, on_board)
-SELECT 
-    s.id, a.id, c.id, SUBSTR(crew_on_board, idx, INSTR(crew_on_board || ',', ',', idx) - idx), 1
-FROM all_data a
-JOIN Shout s ON a.id = s.all_data_id
-JOIN Crew c ON INSTR(',' || a.crew_on_board || ',', ',' || c.initials || ',') > 0
-JOIN (
-  SELECT 1 as idx
-  UNION ALL SELECT idx + 1 FROM idx WHERE idx < LENGTH(crew_on_board)
-) as idx ON SUBSTR(',' || a.crew_on_board || ',', idx, 1) = ',';
-
-
--- -- Update the on_shore column based on crew_on_shore, only if crew member is not already marked as on board
--- UPDATE Shout_Crew 
--- SET on_shore = 1
--- WHERE all_data_id IN (
---     SELECT a.id 
---     FROM all_data a
---     JOIN Shout s ON a.id = s.all_data_id
---     JOIN Crew c ON INSTR(',' || a.crew_on_shore || ',', ',' || c.initials || ',') > 0
--- )
--- AND on_board = 0; -- Ensure crew member is not already marked as on board
-
-
-.tables
-
--- Verify the data in the Shout_Crew table
-SELECT * FROM Shout_Crew
-WHERE all_data_id = 2;
-
-
--- using Shout_crew i want to check which crew where on the first 3 shouts in all_data
-
-SELECT id, crew_on_board,crew_on_shore FROM all_data LIMIT 2;
-
--- Retrieve the initials of crew members who were on board for the fifth shout (all_data_id = 5)
--- SELECT C.initials
--- FROM Shout_Crew SC
--- JOIN Crew C ON SC.crew_id = C.id
--- WHERE SC.all_data_id = 2
--- AND SC.on_board = 1;
-
-
+-- -- Create the Shout_Crew table
+-- CREATE TABLE Shout_Crew (
+--     id INTEGER PRIMARY KEY,
+--     shout_id INTEGER NOT NULL,
+--     crew_id INTEGER NOT NULL,
+--     on_board BOOLEAN,
+--     on_shore BOOLEAN,
+--     FOREIGN KEY (shout_id) REFERENCES Shout(shout_id),
+--     FOREIGN KEY (crew_id) REFERENCES Crew(crew_id)
+-- );

@@ -123,8 +123,6 @@
 -- Drop the Shout_Crew table if it exists
 DROP TABLE IF EXISTS Shout_Crew;
 
--- TODO FIX Shout_Crew table
-
 -- Create the Shout_Crew table
 CREATE TABLE Shout_Crew (
     id INTEGER PRIMARY KEY,
@@ -139,18 +137,15 @@ CREATE TABLE Shout_Crew (
     FOREIGN KEY (crew_id) REFERENCES Crew(id)
 );
 
+-- note crew_on_board is a string of crew initials separated by commas
+
 -- Insert data into the Shout_Crew table for crew members who were on board
 INSERT INTO Shout_Crew (shout_id, all_data_id, crew_id, crew_initials, on_board)
 SELECT 
-    s.id, a.id, c.id, SUBSTR(crew_on_board, idx, INSTR(crew_on_board || ',', ',', idx) - idx), 1
+    s.id, a.id, c.id, c.initials, 1
 FROM all_data a
 JOIN Shout s ON a.id = s.all_data_id
-JOIN Crew c ON INSTR(',' || a.crew_on_board || ',', ',' || c.initials || ',') > 0
-JOIN (
-  SELECT 1 as idx
-  UNION ALL SELECT idx + 1 FROM idx WHERE idx < LENGTH(crew_on_board)
-) as idx ON SUBSTR(',' || a.crew_on_board || ',', idx, 1) = ',';
-
+JOIN Crew c ON INSTR(',' || a.crew_on_board || ',', ',' || c.initials || ',') > 0;
 
 -- -- Update the on_shore column based on crew_on_shore, only if crew member is not already marked as on board
 -- UPDATE Shout_Crew 

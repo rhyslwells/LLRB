@@ -123,8 +123,6 @@
 -- Drop the Shout_Crew table if it exists
 DROP TABLE IF EXISTS Shout_Crew;
 
--- TODO FIX Shout_Crew table
-
 -- Create the Shout_Crew table
 CREATE TABLE Shout_Crew (
     id INTEGER PRIMARY KEY,
