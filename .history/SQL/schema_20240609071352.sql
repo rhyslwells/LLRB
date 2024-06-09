@@ -2,7 +2,7 @@
 -- .open LLRB.db
 
 -- Import data from CSV into the temp table (this line assumes you're using the SQLite command line)
-.import --csv cleaned.csv temp
+-- .import --csv cleaned.csv temp
 
 -- Ensure the temp table has no duplicate rows
 CREATE TABLE IF NOT EXISTS temp_cleaned AS
